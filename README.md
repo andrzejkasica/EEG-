@@ -6,17 +6,22 @@ EEG hardware project. Device based on STM32
  - BLE module
  - USB Isolator
  - AFE:
-    ADS1299 (TI) 8 chan
-    ADS1298 (TI) 8 chan
-    AD7771 (Analog Devices) 8 chan
-    INA114 - single channel
- - 
+   ADS1299 (TI) 8 chan
+   ADS1298 (TI) 8 chan
+   AD7771 (Analog Devices) 8 chan
+   INA114 - single channel
+ - LDO
+ - Electrodes (to be chosen)
+ - Electrode cables
+ - USB Isolator
+ - Battery / Acu 
 
 **Software & Tools**
   - STM32CubeIDE
   - eDesignSuite - ST's online design tools: st.com/edesign
   - MNE-Python
   - BESA Simulator
+  - Python
 
 **Electrodes**
 - Wet (Ag/AgCl)	Best signal quality, low impedance	Requires gel, preparation time
