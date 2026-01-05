@@ -5,13 +5,23 @@ EEG hardware project. Device based on STM32
  - STM32F446RE
  - BLE module
  - USB Isolator
- - AFE
+ - AFE:
+    ADS1299 (TI) 8 chan
+    ADS1298 (TI) 8 chan
+    AD7771 (Analog Devices) 8 chan
+    INA114 - single channel
  - 
 
 **Software & Tools**
   - STM32CubeIDE
+  - eDesignSuite - ST's online design tools: st.com/edesign
+  - MNE-Python
+  - BESA Simulator
 
 **Electrodes**
+- Wet (Ag/AgCl)	Best signal quality, low impedance	Requires gel, preparation time
+- Dry	No prep, comfortable	Higher impedance, more noise
+- Semi-dry	Balance of both	Limited availability
 
 **Reference Open source projects**
   - https://pieeg.com/microbci/
@@ -36,3 +46,9 @@ EEG hardware project. Device based on STM32
                    │ SPI Bus   │        │ DSP/Filter│
                    │ (16 MHz)  │        │ Processing│
                    └───────────┘        └───────────┘
+
+**Links**
+https://www.ti.com/product/ADS1299
+https://www.ti.com/lit/an/sbaa188a/sbaa188a.pdf
+https://www.st.com/content/st_com/en/support/learning/stm32-education.html
+https://www.instructables.com/Measure-EEG-With-STM32-Nucleo-Board/
