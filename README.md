@@ -14,11 +14,14 @@ EEG hardware project. Device based on STM32
 **Electrodes**
 
 **Reference Open source projects**
-  - STM32 shield for EEG/EMG/ECG https://pieeg.com/microbci/
+  - https://pieeg.com/microbci/
+    STM32 shield for EEG/EMG/ECG,
     8 channels, NUCLEO-WB55 compatible, Python software
-  - Wearable BCI with ADS1299 + STM32 https://github.com/pieeg-club/ironbci
+  - https://github.com/pieeg-club/ironbci
+    Wearable BCI with ADS1299 + STM32 
     BLE, mobile SDK, 3D printable headset designs
-  - 32-channel research-grade EEG https://www.crowdsupply.com/neuroidss/freeeeg32
+  - https://www.crowdsupply.com/neuroidss/freeeeg32
+    32-channel research-grade EEG
     STM32H7, 4x AD7771 ADCs, high-quality acquisition
   - https://www.hackster.io/mustafamelihcan/open-source-diy-eeg-brainwaves-on-a-custom-pcb-99146e
     Single-channel custom PCB EEG
