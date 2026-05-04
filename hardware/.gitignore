@@ -64,4 +64,9 @@ local.properties
 # Spring Boot Tooling
 .sts4-cache/
 
+# STM32CubeIDE
+.metadata/
+.settings/
+*.ld
+
 # End of https://www.toptal.com/developers/gitignore/api/eclipse
