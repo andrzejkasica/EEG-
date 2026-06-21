@@ -1,0 +1,7 @@
+Components from *** LTSC(?) ***
+
+STM32F446RE - 
+
+
+
+

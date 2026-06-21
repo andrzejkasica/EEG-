@@ -1,0 +1,27 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+*.iml
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+dist/
+.pytest_cache/
+
+# Hardware (KiCad)
+hardware/**/*.bak
+hardware/**/*-backups/
+hardware/**/_autosave-*
+hardware/**/fp-info-cache
+hardware/**/*.000
+hardware/**/*.lck
+
+# Logs
+*.log
