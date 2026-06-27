@@ -613,6 +613,10 @@
     [
       "f077bb96-fdd8-4d67-8482-ecc439e899e7",
       "Root"
+    ],
+    [
+      "088aea0a-da05-47a8-ac1b-bdebb168844a",
+      "STM32"
     ]
   ],
   "text_variables": {}
