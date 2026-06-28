@@ -451,7 +451,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "EEG Kicad Project.kicad_pro",
+    "filename": "EEG_Kicad_Project.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -617,6 +617,18 @@
     [
       "088aea0a-da05-47a8-ac1b-bdebb168844a",
       "STM32"
+    ],
+    [
+      "d98eeb69-7662-4ed7-9abe-731140c82755",
+      "ANALOG_IN"
+    ],
+    [
+      "3b83fd55-2778-484a-a30f-01302499a9b6",
+      "USB_C"
+    ],
+    [
+      "b169b6e1-bf47-4bb4-8864-f460a63c8d56",
+      "POWER_SUPPLY"
     ]
   ],
   "text_variables": {}

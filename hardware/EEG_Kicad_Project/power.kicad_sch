@@ -2,7 +2,7 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "f077bb96-fdd8-4d67-8482-ecc439e899e7")
+	(uuid "07c60467-ede2-4465-af35-c7295e3dbbe2")
 	(paper "A4")
 	(lib_symbols
 		(symbol "power:+3V3"
@@ -458,199 +458,18 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "ADS1299"
-		(exclude_from_sim no)
-		(at 212.09 90.932 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 0 0 194 1)
-			)
-		)
-		(uuid "3d0e3e88-89de-44ce-af5a-f8b8778a833c")
-	)
-	(text "Power supply section"
-		(exclude_from_sim no)
-		(at 38.862 18.288 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 0 0 194 1)
-			)
-		)
-		(uuid "459460e2-1100-4f24-8847-b023c7bae8a8")
-	)
-	(text "STM32"
-		(exclude_from_sim no)
-		(at 213.868 44.45 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 0 0 194 1)
-			)
-		)
-		(uuid "f7f37052-5c6f-4968-b1c1-64cec5657481")
-	)
-	(wire
-		(pts
-			(xy 35.56 33.02) (xy 35.56 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b363a10-b8aa-43ca-9988-7691c4d86868")
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 35.56 33.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "67f28d07-3188-4a73-a672-ad1e38648e13")
-		(property "Reference" "#PWR01"
-			(at 35.56 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 35.56 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 35.56 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 35.56 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 35.56 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c016ef24-7e25-46b7-8422-7dfd96d07c20")
-		)
-		(instances
-			(project "EEG_Kicad_Project"
-				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDA")
-		(at 66.04 39.37 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bf8de62d-b203-40a0-9f87-5fb9a532dfac")
-		(property "Reference" "#PWR04"
-			(at 66.04 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 66.04 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 66.04 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 66.04 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 66.04 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f4519c20-becb-448d-af5f-57cf55d1d7e3")
-		)
-		(instances
-			(project "EEG_Kicad_Project"
-				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
 	(symbol
 		(lib_id "power:GND")
-		(at 48.26 39.37 0)
+		(at 49.53 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d0155cc4-f6ff-487e-b710-70a6ae649aae")
-		(property "Reference" "#PWR05"
-			(at 48.26 45.72 0)
+		(uuid "3d176032-f0cd-44af-87c5-053d7a3bd38c")
+		(property "Reference" "#PWR016"
+			(at 49.53 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -659,7 +478,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 48.26 44.45 0)
+			(at 49.53 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -667,7 +486,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 48.26 39.37 0)
+			(at 49.53 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -676,7 +495,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 39.37 0)
+			(at 49.53 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -685,7 +504,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 48.26 39.37 0)
+			(at 49.53 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -694,12 +513,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "9dac2666-c78a-48b0-8c28-b56dea61a851")
+			(uuid "f738e45a-5fdf-4b89-8ad3-3867986c47a0")
 		)
 		(instances
 			(project "EEG_Kicad_Project"
-				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7"
-					(reference "#PWR05")
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -707,16 +526,16 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 43.18 34.29 0)
+		(at 44.45 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f1278968-21c2-4b98-8a24-492adb2c2cff")
-		(property "Reference" "#PWR02"
-			(at 43.18 38.1 0)
+		(uuid "6def4561-c0cd-4f9d-87ba-8b27b3a0c29d")
+		(property "Reference" "#PWR015"
+			(at 44.45 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -725,7 +544,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 43.18 29.21 0)
+			(at 44.45 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -733,7 +552,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 34.29 0)
+			(at 44.45 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -742,7 +561,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 34.29 0)
+			(at 44.45 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -751,7 +570,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 43.18 34.29 0)
+			(at 44.45 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -760,189 +579,147 @@
 			)
 		)
 		(pin "1"
-			(uuid "27fcb55c-385a-4b9f-bba4-f4da4c6a1ede")
+			(uuid "0716fed2-9c7a-459a-ad49-f0bee96d64a3")
 		)
 		(instances
 			(project "EEG_Kicad_Project"
-				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7"
-					(reference "#PWR02")
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(sheet
-		(at 209.55 50.8)
-		(size 26.67 17.78)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 36.83 48.26 0)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "088aea0a-da05-47a8-ac1b-bdebb168844a")
-		(property "Sheetname" "STM32"
-			(at 209.55 50.0884 0)
+		(uuid "c86b517c-5df4-455c-92b5-2a15612d7c74")
+		(property "Reference" "#PWR014"
+			(at 36.83 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(hide yes)
 			)
 		)
-		(property "Sheetfile" "stm32.kicad_sch"
-			(at 209.55 69.1646 0)
+		(property "Value" "+3V3"
+			(at 36.83 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 			)
+		)
+		(property "Footprint" ""
+			(at 36.83 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 36.83 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f3bd7503-10fb-42ed-8142-dacfd00ff0f5")
 		)
 		(instances
 			(project "EEG_Kicad_Project"
-				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7"
-					(page "2")
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
+					(reference "#PWR014")
+					(unit 1)
 				)
 			)
 		)
 	)
-	(sheet
-		(at 35.56 58.42)
-		(size 39.37 19.05)
+	(symbol
+		(lib_id "power:GNDA")
+		(at 67.31 54.61 0)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "3b83fd55-2778-484a-a30f-01302499a9b6")
-		(property "Sheetname" "USB_C"
-			(at 35.56 57.7084 0)
+		(uuid "f43457a1-9e11-4e84-840e-ba02d74f1ac0")
+		(property "Reference" "#PWR017"
+			(at 67.31 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(hide yes)
 			)
 		)
-		(property "Sheetfile" "usb.kicad_sch"
-			(at 35.56 78.0546 0)
+		(property "Value" "GNDA"
+			(at 67.31 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 			)
+		)
+		(property "Footprint" ""
+			(at 67.31 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+			(at 67.31 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ee0da056-0c15-41fc-80e6-3bf97e3d2d5e")
 		)
 		(instances
 			(project "EEG_Kicad_Project"
-				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7"
-					(page "4")
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
+					(reference "#PWR017")
+					(unit 1)
 				)
 			)
 		)
 	)
-	(sheet
-		(at 36.83 97.79)
-		(size 26.67 15.24)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "b169b6e1-bf47-4bb4-8864-f460a63c8d56")
-		(property "Sheetname" "POWER_SUPPLY"
-			(at 36.83 97.0784 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "power.kicad_sch"
-			(at 36.83 113.6146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "EEG_Kicad_Project"
-				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7"
-					(page "5")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 204.47 100.33)
-		(size 50.8 30.48)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "d98eeb69-7662-4ed7-9abe-731140c82755")
-		(property "Sheetname" "ANALOG_IN"
-			(at 204.47 99.6184 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "analog_in.kicad_sch"
-			(at 204.47 131.3946 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "EEG_Kicad_Project"
-				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7"
-					(page "3")
-				)
-			)
-		)
-	)
-	(sheet_instances
-		(path "/"
-			(page "1")
-		)
-	)
-	(embedded_fonts no)
 )

@@ -2381,7 +2381,7 @@
 		)
 		(uuid "34eacce2-fa14-4827-87a3-4623616baa39")
 	)
-	(text "Reset\n\n"
+	(text "NRST"
 		(exclude_from_sim no)
 		(at 28.956 97.282 0)
 		(effects
@@ -3459,7 +3459,7 @@
 			(uuid "a8095288-0417-4c42-97bb-6553d80f2a8b")
 		)
 		(instances
-			(project "EEG Kicad Project"
+			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
 					(reference "SW1")
 					(unit 1)
@@ -3525,7 +3525,7 @@
 			(uuid "40794914-4547-4c99-a267-a07105f56a56")
 		)
 		(instances
-			(project "EEG Kicad Project"
+			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
 					(reference "#PWR08")
 					(unit 1)
@@ -3591,7 +3591,7 @@
 			(uuid "6c2e2eb4-78a1-4c36-8a65-59e579bd6b1f")
 		)
 		(instances
-			(project "EEG Kicad Project"
+			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
 					(reference "#PWR012")
 					(unit 1)
@@ -3657,7 +3657,7 @@
 			(uuid "51a30f8f-cb6b-4a0e-ad71-470135814a5c")
 		)
 		(instances
-			(project "EEG Kicad Project"
+			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
 					(reference "#PWR06")
 					(unit 1)
@@ -3723,7 +3723,7 @@
 			(uuid "b4cf07e9-06f1-466e-9e6a-e1e5965f0f95")
 		)
 		(instances
-			(project "EEG Kicad Project"
+			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
 					(reference "#PWR013")
 					(unit 1)
@@ -3793,7 +3793,7 @@
 			(uuid "b731b52c-90b1-4bd4-b731-8e07cf7069dc")
 		)
 		(instances
-			(project "EEG Kicad Project"
+			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
 					(reference "R2")
 					(unit 1)
@@ -3863,7 +3863,7 @@
 			(uuid "273d6b18-905b-4c15-bd48-7f8c6870f464")
 		)
 		(instances
-			(project "EEG Kicad Project"
+			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
 					(reference "C4")
 					(unit 1)
@@ -3933,7 +3933,7 @@
 			(uuid "8e94303d-3e49-4152-b5cd-36ef1f415219")
 		)
 		(instances
-			(project "EEG Kicad Project"
+			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
 					(reference "C1")
 					(unit 1)
@@ -4003,7 +4003,7 @@
 			(uuid "6d91eab2-be4c-4659-8541-04eaaf55f0df")
 		)
 		(instances
-			(project "EEG Kicad Project"
+			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
 					(reference "C8")
 					(unit 1)
@@ -4073,7 +4073,7 @@
 			(uuid "9181622a-a2fe-442f-81ec-98c81eeb9912")
 		)
 		(instances
-			(project "EEG Kicad Project"
+			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
 					(reference "C7")
 					(unit 1)
@@ -4143,7 +4143,7 @@
 			(uuid "03c84f40-4577-45f5-8044-edd87b88db2b")
 		)
 		(instances
-			(project "EEG Kicad Project"
+			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
 					(reference "C2")
 					(unit 1)
@@ -4209,7 +4209,7 @@
 			(uuid "41b16aac-3831-4fab-924c-cbf579809feb")
 		)
 		(instances
-			(project "EEG Kicad Project"
+			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
 					(reference "#PWR011")
 					(unit 1)
@@ -4275,7 +4275,7 @@
 			(uuid "2fc36c6b-02f7-4df0-9c4c-a4afc4527f5d")
 		)
 		(instances
-			(project "EEG Kicad Project"
+			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
 					(reference "#PWR07")
 					(unit 1)
@@ -4345,7 +4345,7 @@
 			(uuid "8b43f710-9883-4a09-be32-edab19d5cac8")
 		)
 		(instances
-			(project "EEG Kicad Project"
+			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
 					(reference "JP1")
 					(unit 1)
@@ -4415,7 +4415,7 @@
 			(uuid "e0adfb85-ee77-4ece-8ef9-f5e67046b565")
 		)
 		(instances
-			(project "EEG Kicad Project"
+			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
 					(reference "R1")
 					(unit 1)
@@ -4485,7 +4485,7 @@
 			(uuid "09bc5d43-a5ad-4843-8a9e-01ab8228afad")
 		)
 		(instances
-			(project "EEG Kicad Project"
+			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
 					(reference "C5")
 					(unit 1)
@@ -4555,7 +4555,7 @@
 			(uuid "17ed20d2-37f5-4f2d-b5f1-58eb29cddb77")
 		)
 		(instances
-			(project "EEG Kicad Project"
+			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
 					(reference "C9")
 					(unit 1)
@@ -4621,7 +4621,7 @@
 			(uuid "4fac7bfe-91b2-4e92-9488-76fe47dd1fba")
 		)
 		(instances
-			(project "EEG Kicad Project"
+			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
 					(reference "#PWR010")
 					(unit 1)
@@ -4691,7 +4691,7 @@
 			(uuid "19b324df-f282-4b3d-a569-db26a6f2466b")
 		)
 		(instances
-			(project "EEG Kicad Project"
+			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
 					(reference "C3")
 					(unit 1)
@@ -4761,7 +4761,7 @@
 			(uuid "71eb44c7-5b55-4aff-b0f4-5afed2b832d4")
 		)
 		(instances
-			(project "EEG Kicad Project"
+			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
 					(reference "C6")
 					(unit 1)
@@ -4827,7 +4827,7 @@
 			(uuid "a1f59f3f-5edf-4ccd-8e3e-a99fb6425c0c")
 		)
 		(instances
-			(project "EEG Kicad Project"
+			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
 					(reference "#PWR09")
 					(unit 1)
@@ -4893,7 +4893,7 @@
 			(uuid "b3c146d1-f0c7-4bb6-b4c8-c8eec2973829")
 		)
 		(instances
-			(project "EEG Kicad Project"
+			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
 					(reference "#PWR03")
 					(unit 1)
@@ -5149,7 +5149,7 @@
 			(uuid "3e8d7f8a-5753-4993-bc4d-8c8d192302ea")
 		)
 		(instances
-			(project "EEG Kicad Project"
+			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
 					(reference "U1")
 					(unit 1)
