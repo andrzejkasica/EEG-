@@ -4,7 +4,7 @@ EEG hardware project. Device based on STM32
 **Hardware**
  - STM32F446RE
  - BLE module
- - USB Isolator
+ - USB Type-C connector + USB Isolator
  - AFE:
    ADS1299 (TI) 8 chan
    ADS1298 (TI) 8 chan
@@ -13,7 +13,6 @@ EEG hardware project. Device based on STM32
  - LDO
  - Electrodes (to be chosen)
  - Electrode cables
- - USB Isolator
  - Battery / Acu 
 
 **Software & Tools**

@@ -458,6 +458,19 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "USB C"
+		(exclude_from_sim no)
+		(at 35.56 80.264 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 0 0 194 1)
+			)
+		)
+		(uuid "173e154f-500e-4675-b942-29ba429c2003")
+	)
 	(text "ADS1299"
 		(exclude_from_sim no)
 		(at 212.09 90.932 0)
@@ -814,7 +827,7 @@
 		)
 	)
 	(sheet
-		(at 35.56 58.42)
+		(at 30.48 88.9)
 		(size 39.37 19.05)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -829,8 +842,8 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "3b83fd55-2778-484a-a30f-01302499a9b6")
-		(property "Sheetname" "USB_C"
-			(at 35.56 57.7084 0)
+		(property "Sheetname" "USBC"
+			(at 30.48 88.1884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -839,7 +852,7 @@
 			)
 		)
 		(property "Sheetfile" "usb.kicad_sch"
-			(at 35.56 78.0546 0)
+			(at 30.48 108.5346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -856,7 +869,7 @@
 		)
 	)
 	(sheet
-		(at 36.83 97.79)
+		(at 82.55 25.4)
 		(size 26.67 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -872,7 +885,7 @@
 		)
 		(uuid "b169b6e1-bf47-4bb4-8864-f460a63c8d56")
 		(property "Sheetname" "POWER_SUPPLY"
-			(at 36.83 97.0784 0)
+			(at 82.55 24.6884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -881,7 +894,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 36.83 113.6146 0)
+			(at 82.55 41.2246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
