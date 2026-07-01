@@ -1,7 +1,160 @@
-Components from *** LTSC(?) ***
+Components List - EEG Project
 
-STM32F446RE - 
+Source note: LTSC or local supplier. Prioritise LCSC/Mouser.
+TI reference: ADS1299EEG-FE EVM (SLAU443B, Figure 60 power schematic + Table 10 BOM)
 
+=============================================================================
+ANALOG FRONT END
+=============================================================================
+U_AFE    ADS1299CPAG    TI    ADS1299, 8-ch 24-bit EEG AFE, TQFP-64
+         DVDD: 1.8V-3.6V | AVDD/AVSS: unipolar 5V or bipolar ±2.5V
+         SPI interface, internal reference (4.5V) or external
 
+=============================================================================
+MICROCONTROLLER
+=============================================================================
+U_MCU    STM32F446RET6    ST    ARM Cortex-M4, 180MHz, LQFP-64
+         3.3V supply | FPU | USB OTG FS | SPI | USART
 
+=============================================================================
+POWER SUPPLY - ANALOG (following TI EVM reference, Figure 60 SLAU443B)
+=============================================================================
+Design: Bipolar ±2.5V analog supply (AVDD=+2.5V, AVSS=-2.5V)
+Input: 5V_ISO (isolated 5V from USB isolator or battery)
 
+--- +2.5V AVDD rail ---
+U_AVDD   TPS73225DBVT    TI    LDO +2.5V 250mA, SOT-23-5
+         IN: 5V_ISO, OUT: +2.5V AVDD
+         Same as TI EVM U9
+         Datasheet: https://www.ti.com/product/TPS73225
+
+--- -5V intermediate (charge pump) ---
+U_CP     TPS60403DBVT    TI    Unregulated charge pump inverter, SOT-23-5
+         IN: 5V_ISO, OUT: ~-5V (unregulated, feeds negative LDO)
+         Same as TI EVM U6
+         Datasheet: https://www.ti.com/product/TPS60403
+
+--- -2.5V AVSS rail ---
+U_AVSS   TPS72325DBVT    TI    Negative LDO -2.5V 200mA, SOT-23-5
+         IN: ~-5V (from TPS60403), OUT: -2.5V AVSS
+         Same as TI EVM U8
+         Datasheet: https://www.ti.com/product/TPS72325
+
+=============================================================================
+POWER SUPPLY - DIGITAL
+=============================================================================
+--- +3.3V DVDD rail ---
+U_DVDD   TLV757P33DRVR    TI    LDO +3.3V 500mA, WSON-6 (2x2mm), 28uVrms
+         IN: 5V_ISO, OUT: +3.3V DVDD (STM32 VDD + ADS1299 DVDD)
+         Not in TI EVM (supplied externally from MMB0 host)
+         Datasheet: https://www.ti.com/product/TLV757P
+         NOTE: If noise budget allows, LP5907MFX-3.3 (250mA, 6.5uVrms) is
+               lower noise but may be tight for STM32 USB active mode (~200mA)
+
+=============================================================================
+POWER SUPPLY - INDUCTORS (same values as TI EVM, TDK MLZ2012A3R3WT)
+=============================================================================
+L1       3.3uH    Multilayer    0805    TPS60403 input EMI filter
+L2       3.3uH    Multilayer    0805    TPS60403 output EMI filter
+L3       3.3uH    Multilayer    0805    TPS73225 (+2.5V) output filter
+L4       3.3uH    Multilayer    0805    TPS72325 (-2.5V) output filter
+
+=============================================================================
+POWER SUPPLY - DECOUPLING CAPACITORS
+=============================================================================
+Following TI EVM values (Table 10 / Figure 60):
+
+5V rail input:
+  C_5V_1   10uF   X5R   0805   (x2, input bulk for TPS60403 + TPS73225)
+  C_5V_2    1uF   X7R   0603   (x2, input bypass)
+
+TPS60403 charge pump cap:
+  C_CP      1uF   X7R   0603   (charge pump capacitor, between C1+/C1-)
+
++2.5V AVDD output (TPS73225):
+  C_AVD_1   2.2uF  X5R  0603
+  C_AVD_2  10uF   X5R   0805
+  C_AVD_3  10uF   X5R   0805
+
+-5V intermediate output (TPS60403):
+  C_N5_1   10uF   X5R   0805
+  C_N5_2    1uF   X7R   0603
+
+-2.5V AVSS output (TPS72325):
+  C_AVS_1   2.2uF  X5R  0603
+  C_AVS_2  10uF   X5R   0805
+  C_AVS_3  10uF   X5R   0805
+  C_AVS_4   0.01uF X7R  0603   (high-freq bypass)
+
++3.3V DVDD output (TLV757P):
+  C_DV_1   10uF   X5R   0805
+  C_DV_2    1uF   X7R   0603
+  C_DV_3    0.1uF X7R   0603
+
+ADS1299 per-pin DVDD bypass:
+  C_AFE_D   0.1uF X7R   0603   (x4, one per DVDD pin on ADS1299)
+
+ADS1299 per-pin AVDD bypass:
+  C_AFE_A   0.1uF X7R   0603   (x2, AVDD and AVSS pins)
+  C_AFE_A2  1uF   X5R   0603   (x2, AVDD and AVSS bulk)
+
+STM32 VDD bypass (per VDD pin):
+  C_MCU     0.1uF X7R   0603   (x4, one per VDD/VDDA pin)
+  C_MCU2    1uF   X5R   0603   (x2, VDD and VDDA bulk)
+  C_MCU3   10uF   X5R   0805   (x1, main VDD bulk)
+
+=============================================================================
+USB / ISOLATION
+=============================================================================
+U_ISO    ADUM3160BRWZ    ADI    USB 2.0 full-speed isolator, SOIC-16-W
+         Isolates USB data lines (D+/D-). Does NOT isolate power.
+         Patient side powered from battery or isolated DC-DC.
+         Datasheet: https://www.analog.com/en/products/adum3160.html
+
+         NOTE: ADUM3160 requires separate isolated 5V on device side.
+         If USB-powered (no battery): add an isolated DC-DC converter
+         (e.g. TI DCH010505S or RECOM R-78E5.0-0.5) on the device side
+         to generate 5V_ISO from 5V_USB.
+
+U_ESD    USBLC6-2SC6    ST    USB ESD protection, SOT-23-6
+         Place on USB-C data lines, PC side of isolator
+
+CON_USB  USB-C receptacle    GCT USB4135-GF-A or Amphenol 12401610E4#2A
+         USB 2.0 only (no CC1/CC2 PD negotiation needed for 5V/500mA)
+         Add 5.1kOhm resistors on CC1 and CC2 to GND (device mode)
+
+=============================================================================
+OSCILLATOR (for ADS1299 external clock option)
+=============================================================================
+OSC1     FXO-HC735-2.048    Fox    2.048MHz HCMOS SMD oscillator, 3.3V
+         Same as TI EVM OSC1
+         Used if ADS1299 CLKSEL=1 (external clock mode)
+         Alternative: SiT8002AC-34-18E-2.048 (1.8V version if DVDD=1.8V)
+
+=============================================================================
+DEBUG / PROGRAMMING
+=============================================================================
+CON_SWD  1x5 2.54mm header    SWD debug connector (SWDIO/SWDCK/NRST/VDD/GND)
+CON_UART 1x4 2.54mm header    USART3 TX/RX debug UART (from STM32 PB10/PC5)
+
+=============================================================================
+TEST POINTS (recommended, following TI EVM practice)
+=============================================================================
+TP_5V    +5V_ISO rail
+TP_3V3   +3.3V DVDD
+TP_AVDD  +2.5V AVDD
+TP_AVSS  -2.5V AVSS
+TP_N5V   ~-5V intermediate
+TP_GND   Analog GND
+TP_DGND  Digital GND
+
+=============================================================================
+NOTES
+=============================================================================
+- AGND and DGND: connect at single star point near ADS1299 decoupling cap.
+  Keep analog and digital ground pours separate on PCB.
+- 5V_ISO: completely isolated from USB VBUS / PC ground.
+  If battery powered: 5V_ISO = battery regulated output.
+  If USB powered: 5V_ISO = output of isolated DC-DC converter.
+- ADS1299 VREF: use internal reference (2.4V internal = 4.5V swing for 24-bit).
+  External reference (REF3240, 4.096V) optional for better accuracy.
