@@ -22,6 +22,7 @@ hardware/**/_autosave-*
 hardware/**/fp-info-cache
 hardware/**/*.000
 hardware/**/*.lck
+hardware/**/#auto_saved_files#
 
 # Logs
 *.log
