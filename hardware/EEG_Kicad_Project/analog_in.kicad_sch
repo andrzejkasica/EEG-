@@ -1258,7 +1258,7 @@
 	)
 	(symbol
 		(lib_id "Analog_ADC:ADS1299")
-		(at 217.17 105.41 0)
+		(at 189.23 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1267,7 +1267,7 @@
 		(fields_autoplaced yes)
 		(uuid "f89395f3-9d6f-42b0-9b4c-689b9438f85e")
 		(property "Reference" "U3"
-			(at 221.8533 59.69 0)
+			(at 193.9133 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1276,7 +1276,7 @@
 			)
 		)
 		(property "Value" "ADS1299"
-			(at 221.8533 62.23 0)
+			(at 193.9133 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1285,7 +1285,7 @@
 			)
 		)
 		(property "Footprint" "Package_QFP:TQFP-64_10x10mm_P0.5mm"
-			(at 217.17 158.75 0)
+			(at 189.23 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1295,7 +1295,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ads1299.pdf"
-			(at 217.17 161.29 0)
+			(at 189.23 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1304,7 +1304,7 @@
 			)
 		)
 		(property "Description" "Low-Noise, 8-channel, 24-bit ADC for EEG and Biopotential Measurements, TQFP-64"
-			(at 217.17 107.95 0)
+			(at 189.23 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)

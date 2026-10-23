@@ -2599,7 +2599,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 88.9) (xy 182.88 88.9)
+			(xy 180.34 88.9) (xy 199.39 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2859,6 +2859,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 88.9) (xy 199.39 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7181b875-d289-46be-99e6-29615ad8cd5c")
+	)
+	(wire
+		(pts
 			(xy 31.75 40.64) (xy 31.75 44.45)
 		)
 		(stroke
@@ -3059,7 +3069,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 91.44) (xy 182.88 91.44)
+			(xy 180.34 91.44) (xy 203.2 91.44)
 		)
 		(stroke
 			(width 0)
@@ -3209,6 +3219,16 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 91.44) (xy 203.2 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4df9c9e-2d0e-44aa-96b3-4f8c538fc2e8")
+	)
+	(wire
+		(pts
 			(xy 43.18 40.64) (xy 43.18 44.45)
 		)
 		(stroke
@@ -3247,16 +3267,6 @@
 		)
 		(uuid "ff36b650-9bba-4fcd-a4cc-afa13e891283")
 	)
-	(label "USB_OTG_FS_DP"
-		(at 182.88 91.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "08cc2de1-979e-488c-b8bf-714335678aaf")
-	)
 	(label "USART3_RX"
 		(at 137.16 111.76 180)
 		(effects
@@ -3286,16 +3296,6 @@
 			(justify right bottom)
 		)
 		(uuid "2bf0c344-45d6-4c70-8af2-dda92e05d825")
-	)
-	(label "USB_OTG_FS_DM"
-		(at 182.88 88.9 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4153f906-3f14-45c2-a551-d7aeda0b5c28")
 	)
 	(label "RCC_OSC_OUT"
 		(at 135.89 73.66 180)
@@ -3396,6 +3396,50 @@
 			(justify left bottom)
 		)
 		(uuid "ef029713-5be3-4d0a-a035-98d1d9f63469")
+	)
+	(global_label "USB_OTG_FS_DP"
+		(shape input)
+		(at 203.2 87.63 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5ef81e56-08d8-4701-80cc-ad9c0be9ca30")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 203.2 69.5258 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USB_OTG_FS_DM"
+		(shape input)
+		(at 199.39 87.63 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6e4c3d2c-35ca-4881-803c-f3d782879239")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 199.39 69.3444 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
