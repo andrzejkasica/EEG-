@@ -2,9 +2,9 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Take `hardware/EEG_Kicad_Project` from its current state (power supply + ADS1299 front-end + STM32/USB mostly drawn, no isolation yet) to an ordered, assembled, bring-up-tested board.
+**Goal:** Take `hardware/EEG_Kicad_Project` from its current state (power supply and USB drawn with isolation; ADS1299 unwired; STM32 only partly connected) to an ordered, assembled, bring-up-tested board.
 
-**Architecture:** USB-powered with a galvanic isolation barrier. Non-isolated side: USB connector, magnetics/ESD, ADuM3160BRWZ (USB isolator). Isolated side: STM32F446, ADS1299, the existing ±2.5V/-5V analog supply chain, powered from an isolated 5V DC-DC (e.g. RECOM R-78E5.0) instead of USB VBUS directly. Electrodes only ever touch the isolated side.
+**Architecture:** USB-powered with a galvanic isolation barrier. Non-isolated side: USB connector, magnetics/ESD, ADuM3160BRWZ (USB isolator). Isolated side: STM32F446, ADS1299, the existing ±2.5V/-5V analog supply chain, powered from an isolated 5V DC-DC (TMU3-0511) instead of USB VBUS directly. Electrodes only ever touch the isolated side.
 
 **Tech Stack:** KiCad 8, `kicad-happy` plugin (schematic/PCB analysis, BOM, EMC, SPICE, fab prep), JLCPCB for fab/assembly.
 
@@ -13,14 +13,13 @@
 ## Global Constraints
 
 - Isolation barrier must be a single, continuous split — no second accidental path (shared shield, mounting screw, connector) bridging isolated/non-isolated ground.
-- Ground split (GND/GNDA) ties at exactly one point at the ADS1299, per TI ADS1299 datasheet §12.1 — already implemented, do not add a second tie.
+- GND and GNDA are merged into one net on the isolated side (the datasheet split is optional), so `GND` is the isolated ground and `GND_PRI` the USB-side ground. They must never connect.
 - No medical certification target — but maintain basic creepage/clearance at the isolation barrier since electrodes contact the scalp while USB-connected to a PC.
 - BOM must reach 100% MPN coverage before ordering (pre-fab gate, currently 0%).
 
 ## Review Focus
 
 - Isolation barrier accidentally bridged by a second ground path (connector shield, test point, mounting hardware) — invisible to ERC, only caught by manual net-trace + layout inspection.
-- TLV75709 (in schematic) vs TLV757P33 (in project memory) — confirm which part is actually intended for the +3V3 rail before sourcing.
 - USB D+/D- and electrode input ESD protection — floating/unprotected external-facing pins are common oversights.
 - Barrier creepage/clearance on PCB layout not meeting the isolator's rated working voltage.
 - Power sequencing across the isolation boundary (isolated 5V DC-DC must be stable before ADuM3160 and the LDO chain enable).
@@ -44,19 +43,24 @@
 - [ ] **Step 5:** Run `kicad-happy:kicad` schematic analyzer (`analyze_schematic.py`). Expected: no new ERC errors; confirm the two ground domains (`GND` non-isolated, `GNDA` isolated) still have exactly one tie point at U3.
 - [ ] **Step 6:** Commit: `git commit -m "add USB isolation barrier (ADuM3160 + isolated 5V DC-DC)"`
 
-### Task 2: Close remaining schematic gaps
+### Task 2: Finish the schematic
+
+Revised 2026-11-04 after ERC triage: the ADS1299 had never been wired, so this task is much larger than first written. Decisions: 8 channels wired, shared reference on SRB1 plus BIAS drive electrode, internal ADS1299 clock (CLKSEL high).
 
 **Files:**
-- Modify: `hardware/EEG_Kicad_Project/analog_in.kicad_sch` (electrode input ESD)
-- Modify: `hardware/EEG_Kicad_Project/usb.kicad_sch` (USB ESD)
-- Modify: `hardware/EEG_Kicad_Project/power.kicad_sch` (R3-R6 footprint/value, or remove if genuinely unused)
+- Modify: `hardware/EEG_Kicad_Project/analog_in.kicad_sch`
+- Modify: `hardware/EEG_Kicad_Project/stm32.kicad_sch`
+- Modify: `hardware/EEG_Kicad_Project/usb.kicad_sch`
+- Modify: `hardware/EEG_Kicad_Project/power.kicad_sch`
 
-- [ ] **Step 1:** Add ESD/TVS protection on each ADS1299 electrode input (patient-facing, highest risk pins).
-- [ ] **Step 2:** Add ESD protection on USB D+/D- at the connector (non-isolated side).
-- [ ] **Step 3:** Decide fate of R3/R4/R5/R6 (currently DNP, no value/footprint) — either assign real values+footprints if they're staying in as spare pads, or delete them from the schematic entirely.
-- [ ] **Step 4:** Verify power sequencing: isolated 5V stable → charge pump → ±LDOs → STM32/ADS1299 enable. Check EN pin wiring matches this order.
-- [ ] **Step 5:** Run `kicad-happy:kicad` deep review (schematic + datasheet cross-check) on all ICs. Expected: no `high`/`error` findings besides the known MPN-coverage gate (fixed in Task 3).
-- [ ] **Step 6:** Commit: `git commit -m "finish analog input/USB ESD protection, clean up DNP placeholders"`
+- [x] **Step 0:** Replace U5 with the 3.3V TLV75733P (`772ae0a`).
+- [ ] **Step 1:** Wire ADS1299 power, reference, decoupling and tie-offs, per `2026-11-04-ads1299-step1-wiring.md`.
+- [ ] **Step 2:** Connect the STM32: SPI1 plus CS, DRDY, START, RESET, PWDN to U3; 8MHz HSE crystal (per CubeMX); SWD header; UART header on PB10/PC5 (schematic labels are on the wrong pins, PC10/PC11); LEDs on PB3/PB4; test points.
+- [ ] **Step 3:** Add the electrode connector and input network with ESD protection for all 8 channels, SRB1 reference and BIAS drive, including bias amp feedback parts.
+- [ ] **Step 4:** Route U9 through U8's pass-through pins (`UD+`/`UD-`), decide R3-R6, add `PWR_FLAG`s, flag spare STM32 pins no-connect.
+- [ ] **Step 5:** Verify power sequencing against ADS1299 §11.1: digital and analog inputs low until supplies settle.
+- [ ] **Step 6:** Run `kicad-cli sch erc` and the `kicad-happy:kicad` deep review. Expected: zero ERC errors and no `high`/`error` findings besides the MPN-coverage gate.
+- [ ] **Step 7:** Re-sync the PCB from the schematic and commit.
 
 ### Task 3: Source parts and close the BOM
 

@@ -92,7 +92,7 @@ TPS60403 charge pump cap:
   C_DV_3    0.1uF X7R   0603
 
 ADS1299 per-pin DVDD bypass:
-  C_AFE_D   0.1uF X7R   0603   (x4, one per DVDD pin on ADS1299)
+  C_AFE_D   0.1uF X7R   0603   (x2, one per DVDD pin on ADS1299, plus 1uF bulk)
 
 ADS1299 per-pin AVDD bypass:
   C_AFE_A   0.1uF X7R   0603   (x2, AVDD and AVSS pins)
@@ -124,11 +124,11 @@ CON_USB  USB-C receptacle    GCT USB4135-GF-A or Amphenol 12401610E4#2A
          Add 5.1kOhm resistors on CC1 and CC2 to GND (device mode)
 
 =============================================================================
-OSCILLATOR (for ADS1299 external clock option)
+OSCILLATOR (NOT FITTED: design uses the ADS1299 internal clock, CLKSEL=1)
 =============================================================================
 OSC1     FXO-HC735-2.048    Fox    2.048MHz HCMOS SMD oscillator, 3.3V
          Same as TI EVM OSC1
-         Used if ADS1299 CLKSEL=1 (external clock mode)
+         Only needed for external clock mode (CLKSEL=0)
          Alternative: SiT8002AC-34-18E-2.048 (1.8V version if DVDD=1.8V)
 
 =============================================================================
@@ -156,5 +156,5 @@ NOTES
 - 5V_ISO: completely isolated from USB VBUS / PC ground.
   If battery powered: 5V_ISO = battery regulated output.
   If USB powered: 5V_ISO = output of isolated DC-DC converter.
-- ADS1299 VREF: use internal reference (2.4V internal = 4.5V swing for 24-bit).
+- ADS1299 VREF: use internal reference (4.5V, VREFN tied to AVSS).
   External reference (REF3240, 4.096V) optional for better accuracy.
