@@ -4872,4 +4872,72 @@
 			)
 		)
 	)
+  (symbol (lib_id "power:PWR_FLAG") (at 85.09 63.5 270) (unit 1)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+    (uuid "5f6d5f7d-e58d-47f4-bf55-40efe4b1ca3f")
+    (property "Reference" "#FLG06"
+      (at 83.185 63.5 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+    )
+    (property "Value" "PWR_FLAG"
+      (at 88.9 66.04 90)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+				(justify left)
+				)
+    )
+    (property "Footprint" ""
+      (at 85.09 63.5 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+    )
+    (property "Datasheet" ""
+      (at 85.09 63.5 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+    )
+    (property "Description" "Special symbol for telling ERC where power comes from"
+      (at 85.09 63.5 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+    )
+    (pin "1" (uuid "d8305bf6-8e27-415c-a889-a511f3f88793"))
+    (instances
+      (project "EEG_Kicad_Project"
+        (path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/3b83fd55-2778-484a-a30f-01302499a9b6"
+          (reference "#FLG06")
+          (unit 1)
+        )
+      )
+    )
+  )
 )
