@@ -1,6 +1,7 @@
 # KiCad Review Loop: STATE
 
-- **Phase:** 1 complete. Next: Phase 1 → 2 handoff, asking the user which findings to plan. Iteration 1 of 3.
+- **Phase:** 6 complete (REVIEW.md written 2026-11-17). Iter 1: 9 PASS; iter 2: 4 PASS. F-002 on hold. Loop finished for F-001..F-010.
+- **Scope (user, 2026-11-17):** CRITICAL+HIGH+MEDIUM = F-001..F-010.
 - **Phase 1 result:** 23 findings (CRITICAL 0, HIGH 4, MEDIUM 6, LOW 9, INFO 4). See FINDINGS.md and BASELINE.md.
 - **Mode:** full loop, **schematic scope only**.
 - **Started:** 2026-11-16.
@@ -43,8 +44,24 @@ Add each as a finding unless the fresh review already raises it:
 5. Step 2 spec wording on the CS pull-up contradicts SBAS499C §11.1. The circuit is fine; the doc needs a fix. (LOW, docs: `docs/superpowers/plans/2026-11-16-step2-mcu-link.md`)
 6. SPI1_MISO floats while CS is high. Add a firmware note: enable the PA6 pull-down. (LOW, docs)
 
-## Approvals
-(none yet)
+## Manual decisions (user, 2026-11-17)
+- F-002: replace U7 with a REGULATED isolated 5 V DC-DC. Fixer proposes candidates (package, isolation >=1.5 kV, >=200 mA, KiCad symbol/footprint availability); user picks.
+- F-003: DELETE R3-R6. Keep fixed LDOs; NR pins keep only their caps.
+- F-004: Fixer proposes footprints for all: L1-L4 Inductor_SMD:L_0805_2012Metric; J1 a library USB-C footprint matching GCT USB4135-GF-A / USB4105 with pads matching the symbol; SW1 a common SMD tact switch. Each listed for approval. R3-R6 resolved by F-003.
+- F-009: add spec properties now (Y1: CL=12pF, ESR<=60R, C0<=3pF, 3225; C48/C49 value '15p C0G'). Crystal MPN in Task 3. No 0R on OSC_OUT.
+
+## Approvals (user, 2026-11-17, via chat)
+- APPROVED: P-001, P-003, P-004, P-005, P-006, P-007, P-008, P-009, P-010.
+- Destructive actions explicitly approved: P-001 (2 wire deletes), P-003 (delete R3-R6 + 9 wires).
+- P-002: ON HOLD (user, 2026-11-17). TRN 3-0511 datasheet (docs/datasheets/TRN3.pdf) passes M-001 checks but is 9 V-nominal, 4.5 V min input: too little headroom on USB VBUS (can sag to 4.40 V). User wants a regulated 5 V-nominal-input isolated part, to be found in Task 3. F-002 stays OPEN. Do not apply P-002.
+- Execution order: P-003 → P-004 → P-001 → P-005 → P-006 → P-007 → P-008 → P-009 → P-010 → P-002.
 
 ## Process notes
 - The harness blocks subagents from writing report files ("return findings as text"). The Orchestrator saves the returned content into `.kicad-review/` verbatim. The Fixer still writes design changes via MCP; only report files are affected.
+
+## Iteration 2 queue (user approved 2026-11-17)
+- M-004 → add power:PWR_FLAG on VDD1_ISO1 (option a). APPROVED.
+- M-005 → delete wire 0fe28947 (199.39,48.26)→(208.28,48.26) ⚠ DESTRUCTIVE and replace with a VDD1_ISO1 local label on U9 pin 3 (option a). APPROVED incl. the wire delete.
+- N-002 → move Value fields of #PWR0104–#PWR0112 to standard offsets (above + arrows, below GND). APPROVED (user, 2026-11-17).
+- N-003 → wrap the two usb.kicad_sch notes at (200.66,115.57)/(200.66,120.65) into 2–3 lines and move them left inside the A4 frame. APPROVED. Allowed: delete+re-add of those two text items only (⚠ DESTRUCTIVE, text only).
+- Iteration-1 verify: 9 PASS / 0 FAIL / 1 REGRESSION (R-001 = ERC VDD1, kept; fixed by M-004). See VERIFY.md.

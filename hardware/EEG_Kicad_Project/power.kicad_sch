@@ -2098,109 +2098,108 @@
 			)
 			(embedded_fonts no)
 		)
-	
-        	(symbol "power:PWR_FLAG"
-    		(power)
-    		(pin_numbers
-    			(hide yes)
-    		)
-    		(pin_names
-    			(offset 0)
-    			(hide yes)
-    		)
-    		(exclude_from_sim no)
-    		(in_bom yes)
-    		(on_board yes)
-    		(property "Reference" "#FLG"
-    			(at 0 1.905 0)
-    			(effects
-    				(font
-    					(size 1.27 1.27)
-    				)
-    				(hide yes)
-    			)
-    		)
-    		(property "Value" "PWR_FLAG"
-    			(at 0 3.81 0)
-    			(effects
-    				(font
-    					(size 1.27 1.27)
-    				)
-    			)
-    		)
-    		(property "Footprint" ""
-    			(at 0 0 0)
-    			(effects
-    				(font
-    					(size 1.27 1.27)
-    				)
-    				(hide yes)
-    			)
-    		)
-    		(property "Datasheet" "~"
-    			(at 0 0 0)
-    			(effects
-    				(font
-    					(size 1.27 1.27)
-    				)
-    				(hide yes)
-    			)
-    		)
-    		(property "Description" "Special symbol for telling ERC where power comes from"
-    			(at 0 0 0)
-    			(effects
-    				(font
-    					(size 1.27 1.27)
-    				)
-    				(hide yes)
-    			)
-    		)
-    		(property "ki_keywords" "flag power"
-    			(at 0 0 0)
-    			(effects
-    				(font
-    					(size 1.27 1.27)
-    				)
-    				(hide yes)
-    			)
-    		)
-    		(symbol "PWR_FLAG_0_0"
-    			(pin power_out line
-    				(at 0 0 90)
-    				(length 0)
-    				(name "~"
-    					(effects
-    						(font
-    							(size 1.27 1.27)
-    						)
-    					)
-    				)
-    				(number "1"
-    					(effects
-    						(font
-    							(size 1.27 1.27)
-    						)
-    					)
-    				)
-    			)
-    		)
-    		(symbol "PWR_FLAG_0_1"
-    			(polyline
-    				(pts
-    					(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
-    				)
-    				(stroke
-    					(width 0)
-    					(type default)
-    				)
-    				(fill
-    					(type none)
-    				)
-    			)
-    		)
-    		(embedded_fonts no)
-    	)
-  )
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
 	(rectangle
 		(start 142.24 97.79)
 		(end 280.67 140.97)
@@ -2374,12 +2373,6 @@
 		(uuid "125d1a5a-8b4e-4190-b6df-4644ac03f4ba")
 	)
 	(junction
-		(at 76.2 121.92)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1600a934-c2be-480d-bc5c-eb0fb3934b6a")
-	)
-	(junction
 		(at 48.26 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2404,28 +2397,10 @@
 		(uuid "24f611ee-9258-413e-a907-d54a34cf2150")
 	)
 	(junction
-		(at 80.01 133.35)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "30724b82-50db-492f-8593-31c2f88b96f1")
-	)
-	(junction
 		(at 173.99 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "37938f16-7c78-43b9-ba08-ad139c77b0f4")
-	)
-	(junction
-		(at 217.17 120.65)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3e0250a9-e1e5-4b60-88a8-0e2867a607e8")
-	)
-	(junction
-		(at 76.2 123.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "49bb2142-abdf-4a4a-a5fb-764a0a45688f")
 	)
 	(junction
 		(at 246.38 123.19)
@@ -2494,40 +2469,16 @@
 		(uuid "9718e03a-3443-4594-a235-e6911ed76e1d")
 	)
 	(junction
-		(at 76.2 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9b323514-774f-4cdf-b24f-c4f30088f032")
-	)
-	(junction
 		(at 99.06 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "abf17e5d-7bc2-4f6a-adec-8c4c4b5acb26")
 	)
 	(junction
-		(at 224.79 132.08)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b2d56338-a92d-4c24-8090-11cd965cb169")
-	)
-	(junction
 		(at 251.46 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b85b06c5-8d55-4c57-bcd0-d54baeee115a")
-	)
-	(junction
-		(at 217.17 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bbd9addc-3b9f-4016-9707-d6d94c239f20")
-	)
-	(junction
-		(at 217.17 121.92)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bd8b771e-7f10-42a4-b8f4-a4d03d504bf5")
 	)
 	(junction
 		(at 179.07 76.2)
@@ -2767,16 +2718,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 121.92) (xy 76.2 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "24b93031-b495-45b3-a13d-5b75439bf610")
-	)
-	(wire
-		(pts
 			(xy 71.12 121.92) (xy 76.2 121.92)
 		)
 		(stroke
@@ -2927,16 +2868,6 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 110.49) (xy 217.17 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3df5c3ef-55e7-42d1-8231-7378529c6982")
-	)
-	(wire
-		(pts
 			(xy 257.81 62.23) (xy 257.81 66.04)
 		)
 		(stroke
@@ -2944,16 +2875,6 @@
 			(type default)
 		)
 		(uuid "45ffc747-0c85-43e2-ac3d-26846063d7ba")
-	)
-	(wire
-		(pts
-			(xy 217.17 120.65) (xy 217.17 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4600d9dd-e443-4cec-87df-5c46dcabff6e")
 	)
 	(wire
 		(pts
@@ -3237,16 +3158,6 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 132.08) (xy 224.79 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85deed22-dd3d-4af6-816d-2a519044e8b2")
-	)
-	(wire
-		(pts
 			(xy 58.42 172.72) (xy 63.5 172.72)
 		)
 		(stroke
@@ -3254,16 +3165,6 @@
 			(type default)
 		)
 		(uuid "871e8e05-0bfc-4072-ac9e-56defcf46809")
-	)
-	(wire
-		(pts
-			(xy 217.17 121.92) (xy 217.17 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "893f7bdf-0386-4ba0-be82-0308955132cf")
 	)
 	(wire
 		(pts
@@ -3547,16 +3448,6 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 130.81) (xy 217.17 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b57bd597-9452-493e-8939-162a2597686f")
-	)
-	(wire
-		(pts
 			(xy 34.29 172.72) (xy 34.29 179.07)
 		)
 		(stroke
@@ -3587,16 +3478,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 123.19) (xy 76.2 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ba69e456-eda2-412d-bb21-680f73def438")
-	)
-	(wire
-		(pts
 			(xy 80.01 133.35) (xy 83.82 133.35)
 		)
 		(stroke
@@ -3614,16 +3495,6 @@
 			(type default)
 		)
 		(uuid "bbbaea72-6efb-42f7-afd6-033af4bba81a")
-	)
-	(wire
-		(pts
-			(xy 76.2 132.08) (xy 76.2 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bdfe19be-753f-4373-9bfa-392737ec214b")
 	)
 	(wire
 		(pts
@@ -3664,16 +3535,6 @@
 			(type default)
 		)
 		(uuid "cd336ef0-bcd0-4ed5-abcd-965b8e538b9b")
-	)
-	(wire
-		(pts
-			(xy 76.2 133.35) (xy 80.01 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d118660d-ae47-4838-82ec-20b670aa93ee")
 	)
 	(wire
 		(pts
@@ -4178,76 +4039,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 217.17 127 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "1194a632-12e4-414a-94e0-a18fa1162bbf")
-		(property "Reference" "R4"
-			(at 219.71 125.7299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "?"
-			(at 219.71 128.2699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 215.392 127 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 217.17 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 217.17 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "25ceb4fa-de0f-4e75-a49c-236acb951e18")
-		)
-		(pin "2"
-			(uuid "0a1ffc50-6916-4dbc-989f-b4855fec8473")
-		)
-		(instances
-			(project "EEG_Kicad_Project"
-				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 36.83 119.38 0)
 		(unit 1)
@@ -4510,76 +4301,6 @@
 			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
 					(reference "#PWR033")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 76.2 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "1e3aef4c-250a-49c0-85b3-d94712ad8f91")
-		(property "Reference" "R5"
-			(at 78.74 115.5699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "?"
-			(at 78.74 118.1099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 74.422 116.84 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 76.2 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "111a0687-cada-4df4-aa75-d1ac39985534")
-		)
-		(pin "2"
-			(uuid "b097dd0c-d2a2-431a-be4f-a94d05b9df15")
-		)
-		(instances
-			(project "EEG_Kicad_Project"
-				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
-					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -5190,76 +4911,6 @@
 			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
 					(reference "#PWR024")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 217.17 115.57 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "4997be4d-0414-44f9-b1aa-25fee1285add")
-		(property "Reference" "R3"
-			(at 219.71 114.2999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "?"
-			(at 219.71 116.8399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 215.392 115.57 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 217.17 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 217.17 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "937c7888-137a-4eed-b16a-94a6b0264d3f")
-		)
-		(pin "2"
-			(uuid "ff165870-d580-4740-a15d-77cac0267211")
-		)
-		(instances
-			(project "EEG_Kicad_Project"
-				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
-					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -6088,76 +5739,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 76.2 128.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "7583d223-13a4-48bb-b161-ad6545987799")
-		(property "Reference" "R6"
-			(at 78.74 126.9999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "?"
-			(at 78.74 129.5399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 74.422 128.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 76.2 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "35af98f1-23c4-4834-b2a6-619a84e6a0dd")
-		)
-		(pin "2"
-			(uuid "6d24da24-2eab-40f9-83ee-8528319d8e17")
-		)
-		(instances
-			(project "EEG_Kicad_Project"
-				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GNDA")
 		(at 201.93 132.08 0)
 		(unit 1)
@@ -6945,7 +6526,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 111.76 113.03 0)
 			(effects
 				(font
@@ -7160,7 +6741,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 260.35 110.49 0)
 			(effects
 				(font
@@ -7636,7 +7217,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 162.56 62.23 0)
 			(effects
 				(font
@@ -7770,7 +7351,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 250.19 62.23 0)
 			(effects
 				(font
@@ -8223,270 +7804,529 @@
 			)
 		)
 	)
-  (symbol (lib_id "power:PWR_FLAG") (at 168.91 62.23 0) (unit 1)
-    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
-    (uuid "ad625717-2702-42a8-9e0c-378fb614b03b")
-    (property "Reference" "#FLG02"
-      (at 168.91 59.69 0)
-      (hide yes)
-      (show_name no)
-      (do_not_autoplace no)
-      (effects
-    				(font
-    					(size 1.27 1.27)
-    				)
-    			)
-    )
-    (property "Value" "PWR_FLAG"
-      (at 168.91 64.77 0)
-      (show_name no)
-      (do_not_autoplace no)
-      (effects
-    				(font
-    					(size 1.27 1.27)
-    				)
-    			)
-    )
-    (property "Footprint" ""
-      (at 168.91 62.23 0)
-      (hide yes)
-      (show_name no)
-      (do_not_autoplace no)
-      (effects
-    				(font
-    					(size 1.27 1.27)
-    				)
-    			)
-    )
-    (property "Datasheet" ""
-      (at 168.91 62.23 0)
-      (hide yes)
-      (show_name no)
-      (do_not_autoplace no)
-      (effects
-    				(font
-    					(size 1.27 1.27)
-    				)
-    			)
-    )
-    (property "Description" "Special symbol for telling ERC where power comes from"
-      (at 168.91 62.23 0)
-      (hide yes)
-      (show_name no)
-      (do_not_autoplace no)
-      (effects
-    				(font
-    					(size 1.27 1.27)
-    				)
-    			)
-    )
-    (pin "1" (uuid "a489fa13-e8b8-4d53-b3a0-f05c96c4906a"))
-    (instances
-      (project "EEG_Kicad_Project"
-        (path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
-          (reference "#FLG02")
-          (unit 1)
-        )
-      )
-    )
-  )
-  (symbol (lib_id "power:PWR_FLAG") (at 271.78 62.23 0) (unit 1)
-    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
-    (uuid "93c501ab-3024-4a0c-abd8-0a3988fdd8e2")
-    (property "Reference" "#FLG03"
-      (at 271.78 59.69 0)
-      (hide yes)
-      (show_name no)
-      (do_not_autoplace no)
-      (effects
-    				(font
-    					(size 1.27 1.27)
-    				)
-    			)
-    )
-    (property "Value" "PWR_FLAG"
-      (at 271.78 64.77 0)
-      (show_name no)
-      (do_not_autoplace no)
-      (effects
-    				(font
-    					(size 1.27 1.27)
-    				)
-    			)
-    )
-    (property "Footprint" ""
-      (at 271.78 62.23 0)
-      (hide yes)
-      (show_name no)
-      (do_not_autoplace no)
-      (effects
-    				(font
-    					(size 1.27 1.27)
-    				)
-    			)
-    )
-    (property "Datasheet" ""
-      (at 271.78 62.23 0)
-      (hide yes)
-      (show_name no)
-      (do_not_autoplace no)
-      (effects
-    				(font
-    					(size 1.27 1.27)
-    				)
-    			)
-    )
-    (property "Description" "Special symbol for telling ERC where power comes from"
-      (at 271.78 62.23 0)
-      (hide yes)
-      (show_name no)
-      (do_not_autoplace no)
-      (effects
-    				(font
-    					(size 1.27 1.27)
-    				)
-    			)
-    )
-    (pin "1" (uuid "f37f07da-69ff-4e4e-9224-21f771776cfb"))
-    (instances
-      (project "EEG_Kicad_Project"
-        (path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
-          (reference "#FLG03")
-          (unit 1)
-        )
-      )
-    )
-  )
-  (symbol (lib_id "power:PWR_FLAG") (at 271.78 110.49 270) (unit 1)
-    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
-    (uuid "c567202f-33d4-465a-8883-482d897b0ffb")
-    (property "Reference" "#FLG04"
-      (at 271.78 107.95 0)
-      (hide yes)
-      (show_name no)
-      (do_not_autoplace no)
-      (effects
-    				(font
-    					(size 1.27 1.27)
-    				)
-    			)
-    )
-    (property "Value" "PWR_FLAG"
-      (at 270.51 102.87 90)
-      (show_name no)
-      (do_not_autoplace no)
-      (effects
-    				(font
-    					(size 1.27 1.27)
-    				)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 168.91 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ad625717-2702-42a8-9e0c-378fb614b03b")
+		(property "Reference" "#FLG02"
+			(at 168.91 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 168.91 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.91 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 168.91 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 168.91 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a489fa13-e8b8-4d53-b3a0-f05c96c4906a")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 271.78 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "93c501ab-3024-4a0c-abd8-0a3988fdd8e2")
+		(property "Reference" "#FLG03"
+			(at 271.78 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 271.78 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 271.78 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 271.78 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 271.78 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f37f07da-69ff-4e4e-9224-21f771776cfb")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 271.78 110.49 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c567202f-33d4-465a-8883-482d897b0ffb")
+		(property "Reference" "#FLG04"
+			(at 271.78 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 270.51 102.87 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(justify right)
-    			)
+			)
+		)
+		(property "Footprint" ""
+			(at 271.78 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 271.78 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 271.78 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b7b94e8a-fe01-4309-8752-a43cfc83d19a")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
+					(reference "#FLG04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 129.54 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "10adf1ce-3f28-432a-98fb-95a111e38924")
+		(property "Reference" "#FLG05"
+			(at 129.54 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 129.54 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 129.54 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3f699358-1bbb-4e9e-927f-228aefa1e993")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
+					(reference "#FLG05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(junction
+		(at 271.78 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "efbc281d-32ae-4566-a5cd-ece4b88183a8")
+	)
+	(junction
+		(at 271.78 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba4f4447-185b-4cb1-98c9-e73b8c63c5aa")
+	)
+	(junction
+		(at 129.54 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "19697835-9e08-4881-932a-05285e628a54")
+	)
+  (symbol (lib_id "Device:C") (at 24.13 170.18 0) (unit 1)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+    (uuid "419a11a6-8fb7-4866-a4dd-c23804d37bdb")
+    (property "Reference" "C53"
+      (at 24.765 172.72 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
     )
-    (property "Footprint" ""
-      (at 271.78 110.49 0)
+    (property "Value" "4.7u"
+      (at 24.765 167.64 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+    )
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+      (at 25.095 166.37 0)
       (hide yes)
       (show_name no)
       (do_not_autoplace no)
       (effects
-    				(font
-    					(size 1.27 1.27)
-    				)
-    			)
+					(font
+						(size 1.27 1.27)
+					)
+				)
     )
     (property "Datasheet" ""
-      (at 271.78 110.49 0)
+      (at 24.13 170.18 0)
       (hide yes)
       (show_name no)
       (do_not_autoplace no)
       (effects
-    				(font
-    					(size 1.27 1.27)
-    				)
-    			)
+					(font
+						(size 1.27 1.27)
+					)
+				)
     )
-    (property "Description" "Special symbol for telling ERC where power comes from"
-      (at 271.78 110.49 0)
+    (property "Description" "Unpolarized capacitor"
+      (at 24.13 170.18 0)
       (hide yes)
       (show_name no)
       (do_not_autoplace no)
       (effects
-    				(font
-    					(size 1.27 1.27)
-    				)
-    			)
+					(font
+						(size 1.27 1.27)
+					)
+				)
     )
-    (pin "1" (uuid "b7b94e8a-fe01-4309-8752-a43cfc83d19a"))
+    (property "Dielectric" "X5R" (at 24.13 170.18 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Voltage" "10V" (at 24.13 170.18 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (pin "1" (uuid "448b9bd5-f8be-4db6-8c59-98e06939a30d"))
+    (pin "2" (uuid "0a3b1f59-6d5e-4953-9b67-cab76c181614"))
     (instances
       (project "EEG_Kicad_Project"
         (path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
-          (reference "#FLG04")
+          (reference "C53")
           (unit 1)
         )
       )
     )
   )
-  (symbol (lib_id "power:PWR_FLAG") (at 129.54 113.03 0) (unit 1)
+  (symbol (lib_id "power:+5V") (at 24.13 166.37 0) (unit 1)
     (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
-    (uuid "10adf1ce-3f28-432a-98fb-95a111e38924")
-    (property "Reference" "#FLG05"
-      (at 129.54 110.49 0)
+    (uuid "4d3f62a1-c4f1-4916-91cc-3dd621234474")
+    (property "Reference" "#PWR0109"
+      (at 24.13 162.56 0)
       (hide yes)
       (show_name no)
       (do_not_autoplace no)
       (effects
-    				(font
-    					(size 1.27 1.27)
-    				)
-    			)
+					(font
+						(size 1.27 1.27)
+					)
+				)
     )
-    (property "Value" "PWR_FLAG"
-      (at 129.54 115.57 0)
+    (property "Value" "+5V_PRI"
+      (at 24.13 161.29 0)
       (show_name no)
       (do_not_autoplace no)
       (effects
-    				(font
-    					(size 1.27 1.27)
-    				)
-    			)
+					(font
+						(size 1.27 1.27)
+					)
+				)
     )
     (property "Footprint" ""
-      (at 129.54 113.03 0)
+      (at 24.13 166.37 0)
       (hide yes)
       (show_name no)
       (do_not_autoplace no)
       (effects
-    				(font
-    					(size 1.27 1.27)
-    				)
-    			)
+					(font
+						(size 1.27 1.27)
+					)
+				)
     )
     (property "Datasheet" ""
-      (at 129.54 113.03 0)
+      (at 24.13 166.37 0)
       (hide yes)
       (show_name no)
       (do_not_autoplace no)
       (effects
-    				(font
-    					(size 1.27 1.27)
-    				)
-    			)
+					(font
+						(size 1.27 1.27)
+					)
+				)
     )
-    (property "Description" "Special symbol for telling ERC where power comes from"
-      (at 129.54 113.03 0)
+    (property "Description" "Power symbol creates a global label with name \"+5V\""
+      (at 24.13 166.37 0)
       (hide yes)
       (show_name no)
       (do_not_autoplace no)
       (effects
-    				(font
-    					(size 1.27 1.27)
-    				)
-    			)
+					(font
+						(size 1.27 1.27)
+					)
+				)
     )
-    (pin "1" (uuid "3f699358-1bbb-4e9e-927f-228aefa1e993"))
+    (pin "1" (uuid "e9fe6c44-4f6b-40e9-b9f0-e771ef714e73"))
     (instances
       (project "EEG_Kicad_Project"
         (path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
-          (reference "#FLG05")
+          (reference "#PWR0109")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol (lib_id "power:GND") (at 24.13 173.99 0) (unit 1)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+    (uuid "c5ea5d27-ca10-4a02-ad04-b6c075173e39")
+    (property "Reference" "#PWR0110"
+      (at 24.13 167.64 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+    )
+    (property "Value" "GND_PRI"
+      (at 24.13 179.07 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+    )
+    (property "Footprint" ""
+      (at 24.13 173.99 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+    )
+    (property "Datasheet" ""
+      (at 24.13 173.99 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+    )
+    (property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+      (at 24.13 173.99 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+    )
+    (pin "1" (uuid "0890d724-d970-42bc-bee6-3a8cd8ae2aec"))
+    (instances
+      (project "EEG_Kicad_Project"
+        (path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
+          (reference "#PWR0110")
           (unit 1)
         )
       )

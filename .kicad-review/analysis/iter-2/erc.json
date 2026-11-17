@@ -1,0 +1,1190 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-17T09:21:00+0100",
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "9.0.9",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/f077bb96-fdd8-4d67-8482-ecc439e899e7",
+            "violations": [
+                {
+                    "description": "Global label not connected anywhere else in the schematic",
+                    "items": [
+                        {
+                            "description": "Global Label 'UD+'",
+                            "pos": {
+                                "x": 1.4605,
+                                "y": 0.5588
+                            },
+                            "uuid": "2ba0d60e-db48-4465-811e-b04def63359e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "global_label_dangling"
+                },
+                {
+                    "description": "Global label not connected anywhere else in the schematic",
+                    "items": [
+                        {
+                            "description": "Global Label 'UD-'",
+                            "pos": {
+                                "x": 1.4605,
+                                "y": 0.6096
+                            },
+                            "uuid": "9e2d387a-c044-4f93-9b64-5c8eabbcd8d9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "global_label_dangling"
+                }
+            ]
+        },
+        {
+            "path": "/STM32/",
+            "uuid_path": "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a",
+            "violations": [
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 54 [PD2, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.397,
+                                "y": 0.7874
+                            },
+                            "uuid": "38c280a4-c612-4169-8996-e448b09b3404"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 8 [PC0, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.397,
+                                "y": 0.8382
+                            },
+                            "uuid": "96a6389b-31e2-4363-866a-af1f582544cf"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 9 [PC1, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.397,
+                                "y": 0.8636
+                            },
+                            "uuid": "eb6f077d-5af1-4fc7-9b47-8eb46c66c554"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 10 [PC2, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.397,
+                                "y": 0.889
+                            },
+                            "uuid": "765da810-13a5-476f-8fc9-b4b7c08f18a5"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 11 [PC3, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.397,
+                                "y": 0.9144
+                            },
+                            "uuid": "7b0a2fb5-87c2-47d9-94f3-a25255b410a0"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 37 [PC6, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.397,
+                                "y": 0.9906
+                            },
+                            "uuid": "8967304b-ee7b-4f5f-8a5f-cc39010934b2"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 38 [PC7, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.397,
+                                "y": 1.016
+                            },
+                            "uuid": "5575a49f-8444-4783-a33f-c97317708a2a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 39 [PC8, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.397,
+                                "y": 1.0414
+                            },
+                            "uuid": "124b5c2d-b8d1-468f-b0b6-86a3dfb33e2a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 40 [PC9, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.397,
+                                "y": 1.0668
+                            },
+                            "uuid": "22d1cd6b-c119-49d2-ba09-864ce3681b64"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 51 [PC10, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.397,
+                                "y": 1.0922
+                            },
+                            "uuid": "81000408-7240-472d-865f-43819002e3d2"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 52 [PC11, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.397,
+                                "y": 1.1176
+                            },
+                            "uuid": "2e5b1f45-3ce5-404a-9772-9e07e576ef6e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 53 [PC12, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.397,
+                                "y": 1.143
+                            },
+                            "uuid": "d4bc3d4e-3968-4f9c-94ab-6c15698ae937"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 2 [PC13, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.397,
+                                "y": 1.1684
+                            },
+                            "uuid": "437a9563-0f61-42c6-a35f-f01979c67fa1"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 3 [PC14, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.397,
+                                "y": 1.1938
+                            },
+                            "uuid": "03e34d3c-47c8-45c9-b956-83cfc867fa8d"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 4 [PC15, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.397,
+                                "y": 1.2192
+                            },
+                            "uuid": "600cdab5-f944-41dc-b4f1-aabae2a2034a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 14 [PA0, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8034,
+                                "y": 0.6096
+                            },
+                            "uuid": "15e2c76d-07d7-4a4b-bc43-5bda4ee33d74"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 15 [PA1, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8034,
+                                "y": 0.635
+                            },
+                            "uuid": "f7473196-7143-4982-ae5d-9512fdb4b7ba"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 16 [PA2, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8034,
+                                "y": 0.6604
+                            },
+                            "uuid": "b23f5c40-029f-4a49-b384-3bd5d9d4bb3c"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 17 [PA3, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8034,
+                                "y": 0.6858
+                            },
+                            "uuid": "f7b9ef10-3ce3-477c-a254-1c7432a12d44"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 41 [PA8, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8034,
+                                "y": 0.8128
+                            },
+                            "uuid": "333067e2-e7c4-4521-9cd0-235bb99edf7a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 42 [PA9, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8034,
+                                "y": 0.8382
+                            },
+                            "uuid": "0b6572cf-b556-43d5-bf4d-5b8ca911cdec"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 43 [PA10, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8034,
+                                "y": 0.8636
+                            },
+                            "uuid": "5d7384b7-1ea2-4c5e-84fa-779586a1e523"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 50 [PA15, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8034,
+                                "y": 0.9906
+                            },
+                            "uuid": "9d74ee7a-12fd-40bc-9ca2-d19c40d3006b"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 28 [PB2, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8034,
+                                "y": 1.0922
+                            },
+                            "uuid": "96c8cfb4-3b22-4e31-97c5-69392bb46ee3"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 57 [PB5, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8034,
+                                "y": 1.1684
+                            },
+                            "uuid": "310b432c-159e-4b71-8a9b-800e793fb9de"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 58 [PB6, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8034,
+                                "y": 1.1938
+                            },
+                            "uuid": "fc9c285a-8e4a-433b-8ee8-2f67cf86beee"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 59 [PB7, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8034,
+                                "y": 1.2192
+                            },
+                            "uuid": "21b928a8-0306-4707-b572-7d39ddc2535a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 61 [PB8, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8034,
+                                "y": 1.2446
+                            },
+                            "uuid": "b548bda5-925c-4422-9e18-60bacde97e79"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 62 [PB9, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8034,
+                                "y": 1.27
+                            },
+                            "uuid": "69c04da6-fdeb-486e-9d79-0c33f5756232"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 34 [PB13, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8034,
+                                "y": 1.3462
+                            },
+                            "uuid": "2fe018ea-b7aa-46d2-a611-c55eedd5eb64"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 35 [PB14, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8034,
+                                "y": 1.3716
+                            },
+                            "uuid": "de2e0be0-1bc8-4a13-94af-67d2036970cd"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 36 [PB15, Bidirectional, Line]",
+                            "pos": {
+                                "x": 1.8034,
+                                "y": 1.397
+                            },
+                            "uuid": "e1b9c9d2-55cf-480f-a8d5-d5883f1e6ad3"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                }
+            ]
+        },
+        {
+            "path": "/ANALOG_IN/",
+            "uuid_path": "/f077bb96-fdd8-4d67-8482-ecc439e899e7/d98eeb69-7662-4ed7-9abe-731140c82755",
+            "violations": [
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 16 [IN1P, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.4699
+                            },
+                            "uuid": "afcb6a91-771a-41ff-984f-f2824f4e0219"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 16 [IN1P, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.4699
+                            },
+                            "uuid": "afcb6a91-771a-41ff-984f-f2824f4e0219"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 15 [IN1N, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.4953
+                            },
+                            "uuid": "917892ca-0705-4adb-b5f2-dea24672fe85"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 15 [IN1N, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.4953
+                            },
+                            "uuid": "917892ca-0705-4adb-b5f2-dea24672fe85"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 14 [IN2P, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.5461
+                            },
+                            "uuid": "cb8a7496-35b3-4b57-b899-bddbb16eacf2"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 14 [IN2P, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.5461
+                            },
+                            "uuid": "cb8a7496-35b3-4b57-b899-bddbb16eacf2"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 13 [IN2N, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.5715
+                            },
+                            "uuid": "7fb5a9a9-08c4-444f-ad5d-01d9bb42f796"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 13 [IN2N, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.5715
+                            },
+                            "uuid": "7fb5a9a9-08c4-444f-ad5d-01d9bb42f796"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 12 [IN3P, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.6223
+                            },
+                            "uuid": "646a3a4f-4f1b-4b88-97fe-78d105b50f3c"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 12 [IN3P, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.6223
+                            },
+                            "uuid": "646a3a4f-4f1b-4b88-97fe-78d105b50f3c"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 11 [IN3N, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.6477
+                            },
+                            "uuid": "880b2240-19ff-451c-b959-c21415a0df18"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 11 [IN3N, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.6477
+                            },
+                            "uuid": "880b2240-19ff-451c-b959-c21415a0df18"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 10 [IN4P, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.6985
+                            },
+                            "uuid": "4244cc76-947e-4d03-8d61-6e022881ac8c"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 10 [IN4P, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.6985
+                            },
+                            "uuid": "4244cc76-947e-4d03-8d61-6e022881ac8c"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 9 [IN4N, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.7239
+                            },
+                            "uuid": "b0da5b87-8110-4bb7-8aae-0ffd59d243f1"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 9 [IN4N, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.7239
+                            },
+                            "uuid": "b0da5b87-8110-4bb7-8aae-0ffd59d243f1"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 8 [IN5P, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.7747
+                            },
+                            "uuid": "10d1c779-9ff7-423a-881e-b60e798b0dac"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 8 [IN5P, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.7747
+                            },
+                            "uuid": "10d1c779-9ff7-423a-881e-b60e798b0dac"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 7 [IN5N, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.8001
+                            },
+                            "uuid": "8bd2b954-7163-499c-bcb8-d2d1b9b20343"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 7 [IN5N, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.8001
+                            },
+                            "uuid": "8bd2b954-7163-499c-bcb8-d2d1b9b20343"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 6 [IN6P, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.8509
+                            },
+                            "uuid": "8586c6ec-a6a8-43b1-8ce4-99b5bb487da4"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 6 [IN6P, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.8509
+                            },
+                            "uuid": "8586c6ec-a6a8-43b1-8ce4-99b5bb487da4"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 5 [IN6N, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.8763
+                            },
+                            "uuid": "358e4c2c-9fb7-442e-8b3d-7e40fd2d7026"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 5 [IN6N, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.8763
+                            },
+                            "uuid": "358e4c2c-9fb7-442e-8b3d-7e40fd2d7026"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 4 [IN7P, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.9271
+                            },
+                            "uuid": "8b416707-b358-4dd4-b631-6528d9fc4434"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 4 [IN7P, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.9271
+                            },
+                            "uuid": "8b416707-b358-4dd4-b631-6528d9fc4434"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 3 [IN7N, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.9525
+                            },
+                            "uuid": "d623da10-6fda-4bfb-8fbd-16dda14a1b9a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 3 [IN7N, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 0.9525
+                            },
+                            "uuid": "d623da10-6fda-4bfb-8fbd-16dda14a1b9a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 2 [IN8P, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 1.0033
+                            },
+                            "uuid": "a2b042f4-0fb5-4a5e-8d60-3f6aa382672b"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 2 [IN8P, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 1.0033
+                            },
+                            "uuid": "a2b042f4-0fb5-4a5e-8d60-3f6aa382672b"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 1 [IN8N, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 1.0287
+                            },
+                            "uuid": "2845802c-0c50-4d23-9ec8-e0e20b54b587"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 1 [IN8N, Input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 1.0287
+                            },
+                            "uuid": "2845802c-0c50-4d23-9ec8-e0e20b54b587"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 63 [BIASOUT, Output, Line]",
+                            "pos": {
+                                "x": 2.0701,
+                                "y": 0.4699
+                            },
+                            "uuid": "1461b9b5-fcc4-4871-b951-b48b2eb85c6a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 61 [BIASINV, Input, Line]",
+                            "pos": {
+                                "x": 2.0701,
+                                "y": 0.4953
+                            },
+                            "uuid": "9f6bc92a-2093-42f8-9191-99b408f8cad5"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 61 [BIASINV, Input, Line]",
+                            "pos": {
+                                "x": 2.0701,
+                                "y": 0.4953
+                            },
+                            "uuid": "9f6bc92a-2093-42f8-9191-99b408f8cad5"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 62 [BIASIN, Input, Line]",
+                            "pos": {
+                                "x": 2.0701,
+                                "y": 0.5207
+                            },
+                            "uuid": "24697da3-3035-4cfa-ac89-e30e7e28fb7e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 62 [BIASIN, Input, Line]",
+                            "pos": {
+                                "x": 2.0701,
+                                "y": 0.5207
+                            },
+                            "uuid": "24697da3-3035-4cfa-ac89-e30e7e28fb7e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 60 [BIASREF, Input, Line]",
+                            "pos": {
+                                "x": 2.0701,
+                                "y": 0.5461
+                            },
+                            "uuid": "74d60061-cbfe-466e-aa73-a020e286ba6e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 60 [BIASREF, Input, Line]",
+                            "pos": {
+                                "x": 2.0701,
+                                "y": 0.5461
+                            },
+                            "uuid": "74d60061-cbfe-466e-aa73-a020e286ba6e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 17 [SRB1, Bidirectional, Line]",
+                            "pos": {
+                                "x": 2.0701,
+                                "y": 0.5969
+                            },
+                            "uuid": "159a282c-600b-4ebf-a067-3a3b5a1668ec"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 18 [SRB2, Bidirectional, Line]",
+                            "pos": {
+                                "x": 2.0701,
+                                "y": 0.6223
+                            },
+                            "uuid": "bee4a049-37f0-4568-b22d-79461f4d1325"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                }
+            ]
+        },
+        {
+            "path": "/USBC/",
+            "uuid_path": "/f077bb96-fdd8-4d67-8482-ecc439e899e7/3b83fd55-2778-484a-a30f-01302499a9b6",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SUPPLY/",
+            "uuid_path": "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56",
+            "violations": [
+                {
+                    "description": "Both GND and GNDA are attached to the same items; GND will be used in the netlist",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR017 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 1.0795,
+                                "y": 0.762
+                            },
+                            "uuid": "164bf2d4-521c-470b-9241-6033c7c4175f"
+                        },
+                        {
+                            "description": "Symbol #PWR028 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 1.6891,
+                                "y": 1.3208
+                            },
+                            "uuid": "c888c317-292e-4e17-bbee-259035bc9b5f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "multiple_net_names"
+                }
+            ]
+        }
+    ],
+    "source": "EEG_Kicad_Project.kicad_sch"
+}

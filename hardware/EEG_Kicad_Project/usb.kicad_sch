@@ -2481,22 +2481,10 @@
 		(uuid "991829c9-a4f1-4bc9-b769-32ae8a7463c7")
 	)
 	(junction
-		(at 199.39 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c711ffc9-4631-4fa7-ba9b-b778bc98e013")
-	)
-	(junction
 		(at 85.09 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d0e0d793-6d75-4698-a467-235eb41f67ee")
-	)
-	(junction
-		(at 218.44 40.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fb52bc11-8a8c-4628-a889-e7b7019f8eeb")
 	)
 	(wire
 		(pts
@@ -2537,16 +2525,6 @@
 			(type default)
 		)
 		(uuid "0ba7d700-13b5-4e82-aed2-830ce1c01da6")
-	)
-	(wire
-		(pts
-			(xy 199.39 48.26) (xy 208.28 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0fe28947-355a-4f61-a84d-8edafb2342ab")
 	)
 	(wire
 		(pts
@@ -2800,16 +2778,6 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 40.64) (xy 218.44 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7dd3ce25-0e80-4f7c-beda-a78989ca3063")
-	)
-	(wire
-		(pts
 			(xy 134.62 50.8) (xy 134.62 52.07)
 		)
 		(stroke
@@ -3020,16 +2988,6 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 48.26) (xy 199.39 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf368793-2204-4865-a81f-fce0240f98f0")
-	)
-	(wire
-		(pts
 			(xy 234.95 66.04) (xy 240.03 66.04)
 		)
 		(stroke
@@ -3220,7 +3178,7 @@
 	)
 	(global_label "D-"
 		(shape input)
-		(at 201.93 54.61 90)
+		(at 201.93 46.99 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3264,7 +3222,7 @@
 	)
 	(global_label "USB_OTG_FS_DP"
 		(shape input)
-		(at 245.11 54.61 90)
+		(at 245.11 46.99 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3286,7 +3244,7 @@
 	)
 	(global_label "USB_OTG_FS_DM"
 		(shape input)
-		(at 250.19 54.61 90)
+		(at 250.19 46.99 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3418,7 +3376,7 @@
 	)
 	(global_label "D+"
 		(shape input)
-		(at 205.74 54.61 90)
+		(at 205.74 46.99 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3863,7 +3821,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
 			(at 52.07 62.23 0)
 			(effects
 				(font
@@ -4872,72 +4830,1199 @@
 			)
 		)
 	)
-  (symbol (lib_id "power:PWR_FLAG") (at 85.09 63.5 270) (unit 1)
-    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
-    (uuid "5f6d5f7d-e58d-47f4-bf55-40efe4b1ca3f")
-    (property "Reference" "#FLG06"
-      (at 83.185 63.5 0)
-      (hide yes)
-      (show_name no)
-      (do_not_autoplace no)
-      (effects
-					(font
-						(size 1.27 1.27)
-					)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 85.09 63.5 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5f6d5f7d-e58d-47f4-bf55-40efe4b1ca3f")
+		(property "Reference" "#FLG06"
+			(at 83.185 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-    )
-    (property "Value" "PWR_FLAG"
-      (at 88.9 66.04 90)
-      (show_name no)
-      (do_not_autoplace no)
-      (effects
-					(font
-						(size 1.27 1.27)
-					)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 88.9 66.04 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-    )
-    (property "Footprint" ""
-      (at 85.09 63.5 0)
-      (hide yes)
-      (show_name no)
-      (do_not_autoplace no)
-      (effects
-					(font
-						(size 1.27 1.27)
-					)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-    )
-    (property "Datasheet" ""
-      (at 85.09 63.5 0)
-      (hide yes)
-      (show_name no)
-      (do_not_autoplace no)
-      (effects
-					(font
-						(size 1.27 1.27)
-					)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 85.09 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-    )
-    (property "Description" "Special symbol for telling ERC where power comes from"
-      (at 85.09 63.5 0)
-      (hide yes)
-      (show_name no)
-      (do_not_autoplace no)
-      (effects
-					(font
-						(size 1.27 1.27)
-					)
+			)
+		)
+		(pin "1"
+			(uuid "d8305bf6-8e27-415c-a889-a511f3f88793")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/3b83fd55-2778-484a-a30f-01302499a9b6"
+					(reference "#FLG06")
+					(unit 1)
 				)
-    )
-    (pin "1" (uuid "d8305bf6-8e27-415c-a889-a511f3f88793"))
-    (instances
-      (project "EEG_Kicad_Project"
-        (path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/3b83fd55-2778-484a-a30f-01302499a9b6"
-          (reference "#FLG06")
-          (unit 1)
-        )
-      )
-    )
-  )
+			)
+		)
+	)
+	(junction
+		(at 63.5 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "154e6527-1648-4268-b4ff-811d20831fc9")
+	)
+	(junction
+		(at 48.26 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "08b847bb-2a90-4860-b9a2-224bc8b079ce")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 190.5 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "880f9a7d-3f47-4a0c-a4c3-92b9640fb7dc")
+		(property "Reference" "C50"
+			(at 191.135 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 191.135 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 191.465 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 190.5 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d2ffb0d4-9fea-42f4-8b93-833fbfdf2ef2")
+		)
+		(pin "2"
+			(uuid "0676c748-a003-4224-a54a-20ba9562fe13")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/3b83fd55-2778-484a-a30f-01302499a9b6"
+					(reference "C50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 190.5 48.26) (xy 199.39 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77959a8b-0e65-4939-93c8-83da24dcc0ac")
+	)
+	(label "VDD1_ISO1"
+		(at 190.5 48.26 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c0bb1a1f-7a90-4e55-9b85-b12de443112c")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 190.5 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "49c558fb-137b-45c6-97fa-88a2e8136f03")
+		(property "Reference" "#PWR0104"
+			(at 190.5 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND_PRI"
+			(at 190.5 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 190.5 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d050ca3a-d432-4c7b-b5ac-6a585617e50a")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/3b83fd55-2778-484a-a30f-01302499a9b6"
+					(reference "#PWR0104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 201.93 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2819ee60-afbe-424f-8306-8226d1f4b767")
+		(property "Reference" "R21"
+			(at 203.835 50.8 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide no)
+			)
+		)
+		(property "Value" "24"
+			(at 201.93 50.8 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 200.152 50.8 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 201.93 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 201.93 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 201.93 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a9c2c0a-be6d-4ac9-98bf-93b0e16b2b6a")
+		)
+		(pin "2"
+			(uuid "438ceab0-0ba3-4122-8623-68cc57af627b")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/3b83fd55-2778-484a-a30f-01302499a9b6"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 205.74 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "98ae4c1e-ec42-4e73-a579-f049d6d34abb")
+		(property "Reference" "R22"
+			(at 207.645 50.8 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide no)
+			)
+		)
+		(property "Value" "24"
+			(at 205.74 50.8 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 203.962 50.8 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 205.74 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 205.74 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4974e0c1-cf54-4257-a391-189eab965e0f")
+		)
+		(pin "2"
+			(uuid "bd8422d8-abbc-42ca-9962-91d6b5ab1bbd")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/3b83fd55-2778-484a-a30f-01302499a9b6"
+					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 245.11 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fb4c9e0a-29ed-4a70-95ef-0e0198f56ae0")
+		(property "Reference" "R23"
+			(at 247.015 50.8 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide no)
+			)
+		)
+		(property "Value" "24"
+			(at 245.11 50.8 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 243.332 50.8 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 245.11 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 245.11 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 245.11 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "007af6f7-5bcd-49a8-aeea-d089dd0d3b63")
+		)
+		(pin "2"
+			(uuid "3d668292-3b7a-470d-8517-36380faabe40")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/3b83fd55-2778-484a-a30f-01302499a9b6"
+					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 250.19 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6d84627e-d06f-41c5-80c5-4702faffe2b8")
+		(property "Reference" "R24"
+			(at 252.095 50.8 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide no)
+			)
+		)
+		(property "Value" "24"
+			(at 250.19 50.8 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 248.412 50.8 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 250.19 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 250.19 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "afc06570-541d-4e73-b8cd-d35207ecd1bb")
+		)
+		(pin "2"
+			(uuid "c2faea24-0629-4105-94f0-e12e4176287d")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/3b83fd55-2778-484a-a30f-01302499a9b6"
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "R21-R24: 24R 1% 0402, ADuM3160 full-speed series termination\n(UD+/UD-, DD+/DD-). Place close to U9."
+		(exclude_from_sim no)
+		(at 200.66 123.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "29e96914-830a-4b66-9dea-5fc413aa6af5")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 209.55 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ea50091a-cb92-47fa-8123-82a5f76da3d1")
+		(property "Reference" "C51"
+			(at 210.185 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 210.185 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 210.515 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 209.55 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8925cc34-4738-4f6d-9c3f-f176a3c955dc")
+		)
+		(pin "2"
+			(uuid "5c464114-667b-4de0-8693-af421eff5e9c")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/3b83fd55-2778-484a-a30f-01302499a9b6"
+					(reference "C51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 209.55 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0408cb5b-e4d8-44c3-b4a6-af17192fc68a")
+		(property "Reference" "#PWR0105"
+			(at 209.55 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V_PRI"
+			(at 209.55 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.55 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 209.55 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a413a08c-19b4-4464-bac6-8966740b4dae")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/3b83fd55-2778-484a-a30f-01302499a9b6"
+					(reference "#PWR0105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 209.55 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8098f0fe-d1e3-448b-bca5-23741d92bbfa")
+		(property "Reference" "#PWR0106"
+			(at 209.55 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND_PRI"
+			(at 209.55 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.55 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 209.55 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f49ce03e-0de1-4b85-bd68-0094a4681251")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/3b83fd55-2778-484a-a30f-01302499a9b6"
+					(reference "#PWR0106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 232.41 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "de24a017-a11a-42af-bf41-104a2813f080")
+		(property "Reference" "C52"
+			(at 233.045 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 233.045 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 233.375 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 232.41 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1f92bb9b-082b-41b1-bd1d-5fd02cf1244e")
+		)
+		(pin "2"
+			(uuid "279a41ea-8b70-4c4f-8dde-a69e6e569658")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/3b83fd55-2778-484a-a30f-01302499a9b6"
+					(reference "C52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 232.41 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4703d5ba-5d38-47d8-a413-7f450745650e")
+		(property "Reference" "#PWR0107"
+			(at 232.41 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 232.41 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 232.41 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e108895a-a614-4143-bd7a-1097ea9bf5f3")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/3b83fd55-2778-484a-a30f-01302499a9b6"
+					(reference "#PWR0107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 232.41 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8ae76d85-291c-413e-9d0d-2f69033daf59")
+		(property "Reference" "#PWR0108"
+			(at 232.41 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 232.41 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 232.41 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "577653cb-feb0-4ce1-bf62-61083a956083")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/3b83fd55-2778-484a-a30f-01302499a9b6"
+					(reference "#PWR0108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "C50 (VDD1), C51 (VBUS1), C52 (VBUS2/VDD2):\nADuM3160 bypass - place <=10 mm from U9"
+		(exclude_from_sim no)
+		(at 200.66 115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2f71bcae-072b-4b31-8ca7-a4d136803515")
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 199.39 63.5 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8f2a4882-6c33-4868-a94f-3f6dd22f13a9")
+		(property "Reference" "#FLG07"
+			(at 199.39 61.595 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 199.39 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 199.39 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 199.39 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a1b5fe78-68f9-472f-b4bb-08fedcee737f")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/3b83fd55-2778-484a-a30f-01302499a9b6"
+					(reference "#FLG07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(junction
+		(at 199.39 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a83123cc-8154-4d34-a803-6b5d3ec89f88")
+	)
+	(wire
+		(pts
+			(xy 208.28 48.260000000000005) (xy 208.28 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0f1025c-21ea-4e20-871d-d0bae1636c8a")
+	)
+	(label "VDD1_ISO1"
+		(at 208.28 40.64 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2eed6a44-60b2-42c9-8e51-fc1c7c6ba07d")
+	)
 )

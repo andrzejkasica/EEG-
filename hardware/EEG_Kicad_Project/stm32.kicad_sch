@@ -4580,7 +4580,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
 			(at 21.59 125.73 0)
 			(effects
 				(font
@@ -6480,6 +6480,18 @@
 				)
 			)
 		)
+    (property "CL" "12pF" (at 101.6 78.74 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "ESR" "<=60R" (at 101.6 78.74 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "C0" "<=3pF" (at 101.6 78.74 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Package" "3225" (at 101.6 78.74 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "898e5376-966e-41b0-9cf6-d4740c7debff")
 		)
@@ -6840,7 +6852,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "15p"
+		(property "Value" "15p C0G"
 			(at 91.44 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6919,7 +6931,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "15p"
+		(property "Value" "15p C0G"
 			(at 111.76 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8791,4 +8803,222 @@
 			)
 		)
 	)
+	(text "WARNING: J2/J3 are on the isolated (patient) side.\nConnecting a mains-powered PC/debugger bypasses\nthe USB isolation barrier. Use only with no electrodes\non a person, or via a USB isolator."
+		(exclude_from_sim no)
+		(at 205.74 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "f14181e2-8563-47be-952c-f281f078c8fc")
+	)
+  (symbol (lib_id "Device:C") (at 100.33 48.26 0) (unit 1)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+    (uuid "17a6e3a8-241a-4fa1-ad67-e0e44cef01ef")
+    (property "Reference" "C54"
+      (at 100.965 50.8 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+    )
+    (property "Value" "4.7u"
+      (at 100.965 45.72 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+    )
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+      (at 101.295 44.45 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+    )
+    (property "Datasheet" ""
+      (at 100.33 48.26 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+    )
+    (property "Description" "Unpolarized capacitor"
+      (at 100.33 48.26 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+    )
+    (property "Dielectric" "X5R" (at 100.33 48.26 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (pin "1" (uuid "f1ef7966-0a56-4107-8916-90240844b419"))
+    (pin "2" (uuid "e224cbef-f992-47c7-a010-07fad1ecc0d7"))
+    (instances
+      (project "EEG_Kicad_Project"
+        (path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
+          (reference "C54")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol (lib_id "power:+3V3") (at 100.33 44.45 0) (unit 1)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+    (uuid "f2b25560-07cc-46e1-b898-d4e9c462db02")
+    (property "Reference" "#PWR0111"
+      (at 100.33 40.64 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+    )
+    (property "Value" "+3V3"
+      (at 100.33 39.37 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+    )
+    (property "Footprint" ""
+      (at 100.33 44.45 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+    )
+    (property "Datasheet" ""
+      (at 100.33 44.45 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+    )
+    (property "Description" "Power symbol creates a global label with name \"+3V3\""
+      (at 100.33 44.45 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+    )
+    (pin "1" (uuid "5aa9d69e-6b40-40c3-b6bc-5b092676ef9b"))
+    (instances
+      (project "EEG_Kicad_Project"
+        (path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
+          (reference "#PWR0111")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol (lib_id "power:GND") (at 100.33 52.07 0) (unit 1)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+    (uuid "2376b5a6-ac6f-46d1-a86b-316da9c6098e")
+    (property "Reference" "#PWR0112"
+      (at 100.33 45.72 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+    )
+    (property "Value" "GND"
+      (at 100.33 57.15 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+    )
+    (property "Footprint" ""
+      (at 100.33 52.07 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+    )
+    (property "Datasheet" ""
+      (at 100.33 52.07 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+    )
+    (property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+      (at 100.33 52.07 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+    )
+    (pin "1" (uuid "c5656825-bffc-4fc4-b791-aad4dc6c983d"))
+    (instances
+      (project "EEG_Kicad_Project"
+        (path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a"
+          (reference "#PWR0112")
+          (unit 1)
+        )
+      )
+    )
+  )
 )
