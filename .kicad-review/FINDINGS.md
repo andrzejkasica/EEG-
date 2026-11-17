@@ -206,7 +206,7 @@ Counts: CRITICAL 0, HIGH 4, MEDIUM 6, LOW 9, INFO 4.
 - Suggested fix: add TP7 on `+5V` and TP8 on `-5V`, using the same TestPoint symbol and footprint as TP1–TP6. Place them on power.kicad_sch, or next to TP1–TP6 with labels.
 - Risk if changed: none.
 
-## F-018 [LOW] Library — U4 uses the TPS73625DBV symbol, but its value is TPS73225DBVT
+## F-018 [LOW] Library — U4 uses the TPS73625DBV symbol, but its value is TPS73225DBVT — **CLOSED 2026-11-17 (accepted, round-5 re-check: no stock TPS732xx symbol, pins match)**
 - Source: fresh review (netlist libsource).
 - Location: power.kicad_sch, U4 (201.93, 113.03). lib_id `Regulator_Linear:TPS73625DBV`.
 - Evidence: the symbol and the part are different families (TPS736 vs TPS732). The pin mapping still matches the TPS732 DBV pinout (IN 1, GND 2, EN 3, NR 4, OUT 5; SBVS037S Fig. 4-1), so there is no electrical error. The datasheet link correctly points at tps732.pdf.
@@ -214,7 +214,7 @@ Counts: CRITICAL 0, HIGH 4, MEDIUM 6, LOW 9, INFO 4.
 - Suggested fix: leave it with a note. Or, if the KiCad library has a TPS732xxDBV symbol, swap to it, re-verify the pins and keep the same footprint.
 - Risk if changed: low. A symbol swap can move pin positions and break the wiring, so re-check ERC.
 
-## F-019 [LOW] File hygiene — inconsistent indentation in the hand-inserted #FLG06 block in usb.kicad_sch
+## F-019 [LOW] File hygiene — inconsistent indentation in the hand-inserted #FLG06 block in usb.kicad_sch — **RESOLVED 2026-11-17 (Eeschema re-save; validate_schematic 0 issues)**
 - Source: MCP validate_schematic (indent_depth_mismatch at line 4884).
 - Location: usb.kicad_sch, #FLG06 PWR_FLAG at (85.09, 63.5), lines ≈ 4875–4900.
 - Evidence: the block uses space indentation mixed with tab-indented `(effects (font …))`. The parens balance, and kicad-cli ERC and netlist export load the file fine.
@@ -238,7 +238,7 @@ Counts: CRITICAL 0, HIGH 4, MEDIUM 6, LOW 9, INFO 4.
 - Suggested fix: in firmware, set OTG_FS GCCFG.NOVBUSSENS=1 (CubeMX: "VBUS sensing: Disabled"). Optionally add this to the firmware section of the Step 2 spec.
 - Risk if changed: n/a
 
-## F-022 [INFO] ESD/EMC — no ESD protection on J1 CC1/CC2 or the J2/J3 debug headers
+## F-022 [INFO] ESD/EMC — no ESD protection on J1 CC1/CC2 or the J2/J3 debug headers — **DEFERRED to Task 4 (EMC)**
 - Source: kicad-happy EP-AUD (J1 partial coverage; J2 and J3 none).
 - Location: usb.kicad_sch, J1 CC1/CC2 → R7/R8 5k1 → GND_PRI. stm32.kicad_sch, J2 (266.7, 88.9) and J3 (266.7, 63.5).
 - Evidence:

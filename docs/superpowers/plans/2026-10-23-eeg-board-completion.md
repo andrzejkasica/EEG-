@@ -33,14 +33,14 @@
 - Modify: `hardware/EEG_Kicad_Project/usb.kicad_sch` (ADuM3160 placement relative to USB connector)
 
 **Interfaces:**
-- Isolated DC-DC output net: new `+5V_ISO` rail, feeds the existing TPS60403/TPS72325/TPS73225/TLV75709 chain (replaces their current `+5V` source).
-- ADuM3160: USB-host-side pins stay on non-isolated `+5V`/`GND`; USB-device-side pins (to STM32) move to `+5V_ISO`/isolated `GND`.
+- Isolated DC-DC output net: the isolated rail is named `+5V` (the USB side is `+5V_PRI`; *corrected 2026-11-17, review S6-001: no `+5V_ISO` net exists*), feeds the existing TPS60403/TPS72325/TPS73225/TLV75709 chain (replaces their current `+5V` source).
+- ADuM3160: USB-host-side pins stay on non-isolated `+5V`/`GND`; USB-device-side pins (to STM32) move to the isolated `+3V3`/`GND`.
 
 - [ ] **Step 1:** Decide and record the isolated DC-DC part (RECOM R-78E5.0 or equivalent, isolated ≥1kV working voltage, enough current margin for the whole analog+digital load). Pull its datasheet via `digikey`/`mouser` skill.
-- [ ] **Step 2:** Place the DC-DC in `power.kicad_sch`, rewire the existing `+5V`-sourced chain (TPS60403, TLV75709) to the new `+5V_ISO` net.
+- [ ] **Step 2:** Place the DC-DC in `power.kicad_sch`, rewire the existing `+5V`-sourced chain (TPS60403, TLV75709) to the isolated `+5V` net (USB side renamed `+5V_PRI`).
 - [ ] **Step 3:** Place ADuM3160BRWZ in `usb.kicad_sch` between the USB connector and STM32's USB pins, splitting the net into non-isolated (`USB_DP_RAW`/`USB_DM_RAW`) and isolated (`USB_DP_ISO`/`USB_DM_ISO`) halves.
 - [ ] **Step 4:** Resolve the TLV75709 vs TLV757P33 discrepancy — pick one, update the schematic and the project memory note.
-- [ ] **Step 5:** Run `kicad-happy:kicad` schematic analyzer (`analyze_schematic.py`). Expected: no new ERC errors; confirm the two ground domains (`GND` non-isolated, `GNDA` isolated) still have exactly one tie point at U3.
+- [ ] **Step 5:** Run `kicad-happy:kicad` schematic analyzer (`analyze_schematic.py`). Expected: no new ERC errors; confirm the two ground domains (`GND_PRI` USB side, `GND` isolated) share no net. *(Corrected 2026-11-17, S6-001: GND and GNDA are one isolated net by design.)*
 - [ ] **Step 6:** Commit: `git commit -m "add USB isolation barrier (ADuM3160 + isolated 5V DC-DC)"`
 
 ### Task 2: Finish the schematic
@@ -79,7 +79,7 @@ Revised 2026-11-04 after ERC triage: the ADS1299 had never been wired, so this t
 - Modify: `hardware/EEG_Kicad_Project/EEG_Kicad_Project.kicad_pcb`
 
 - [ ] **Step 1:** Place isolation-barrier components (ADuM3160, isolated DC-DC) with the clearance/creepage their datasheets specify between isolated and non-isolated copper/silkscreen — add a milled slot or explicit keepout if the working voltage calls for it.
-- [ ] **Step 2:** Route power: wide traces for the analog supply chain, continuous `GND`/`GNDA` planes with the single tie point under/near U3.
+- [ ] **Step 2:** Route power: wide traces for the analog supply chain, a continuous isolated `GND` plane (GND/GNDA are one net; keep the analog/digital star point near U3 as a layout guideline only, since DRC cannot enforce it), and a separate `GND_PRI` area on the USB side with creepage/clearance across the barrier.
 - [ ] **Step 3:** Route USB as a controlled-impedance differential pair on both sides of the isolator; keep each half entirely within its own ground domain.
 - [ ] **Step 4:** Place decoupling caps per the standard rule (same layer, no via between cap and IC pin, closest to the pin).
 - [ ] **Step 5:** Fill zones, run `kicad-happy:kicad` PCB analyzer (`analyze_pcb.py --full`) + cross-domain analyzer. Expected: no DRC errors, no `CC-001`/`EG-001`/`DA-001`/`XV-00x` findings.
@@ -101,7 +101,7 @@ Revised 2026-11-04 after ERC triage: the ADS1299 had never been wired, so this t
 **Files:**
 - Create: `docs/bring_up_test_plan.md`
 
-- [ ] **Step 1:** Write a short bring-up checklist: power-on sequence, rail voltage checks (+5V, +5V_ISO, ±2.5V, -5V, +3V3) at each test point, isolation continuity check (confirm *no* DC path between `GND` and `GNDA` — a multimeter beep here means the barrier failed).
+- [ ] **Step 1:** Write a short bring-up checklist: power-on sequence, rail voltage checks (+5V_PRI, isolated +5V at TP8 (≤ 5.25 V, before fitting R41), ±2.5V, −5V at TP9, +3V3) at each test point, isolation continuity check (confirm *no* DC path GND_PRI↔GND and +5V_PRI↔+5V, expect > 10 MΩ — a multimeter beep here means the barrier failed; GND↔GNDA *will* beep, they are one net by design). See `docs/firmware/ads1299-power-up.md` for the bring-up measurements.
 - [ ] **Step 2:** Power up incrementally (bench supply current-limited) before populating the STM32/ADS1299, verify each rail.
 - [ ] **Step 3:** Flash minimal firmware, confirm USB enumerates through the isolator.
 - [ ] **Step 4:** Confirm ADS1299 reads plausible EEG-band noise with shorted/dummy inputs before connecting real electrodes.

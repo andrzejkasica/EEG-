@@ -18,6 +18,9 @@ The hardware the firmware relies on:
 - **SPI1:** mode 1 (CPOL = 0, CPHA = 1), MSB first. Start at SCLK ≤ 4 MHz.
   - Prescaler 2 gives 36 MHz, which is above the 20 MHz maximum. Use prescaler ≥ 8 (9 MHz).
   - Above 4 MHz, keep ≥ 4 tCLK (about 2 µs) between command bytes (tSDECODE).
+- **LED pins (S6-006):** configure PB4 (D1) and PB3 (D2) as GPIO outputs early in init.
+  - After reset, PB4 is NJTRST with its internal pull-up on, so D1 glows faintly (about 30 µA) until the pin is reconfigured.
+  - PB3 is JTDO/SWO, so SWO trace is unavailable. That's fine, because J3 is 2-wire SWD.
 - **J5 expansion header:** PB6/PB7 = I2C1 (AF4, open-drain; external 4.7k pull-ups R36/R37). PA2/PA3 = USART2 (AF7). PA0 = WKUP/GPIO.
 
 ## ADS1299 power-up procedure

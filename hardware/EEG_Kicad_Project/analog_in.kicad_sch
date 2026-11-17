@@ -4566,7 +4566,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "100n"
 			(at 91.44 154.178 0)
 			(effects
 				(font
@@ -8311,7 +8311,7 @@
 		(at 50.8 185.42 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "674e2a82-721d-4ab4-916d-aace89bbd260")
@@ -8388,7 +8388,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "100n"
 			(at 218.44 154.178 0)
 			(effects
 				(font
@@ -10529,7 +10529,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "100n"
 			(at 154.94 154.178 0)
 			(effects
 				(font
@@ -10667,7 +10667,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "100n"
 			(at 40.894 154.432 0)
 			(effects
 				(font
@@ -10736,7 +10736,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "100n"
 			(at 205.74 154.178 0)
 			(effects
 				(font
@@ -11264,7 +11264,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "100n"
 			(at 129.54 154.178 0)
 			(effects
 				(font
