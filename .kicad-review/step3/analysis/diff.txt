@@ -1,0 +1,28 @@
+Design Changes: schematic (breaking) — 35 changes
+  +35 added, -0 removed, ~0 modified
+
+⚠ 9 regression(s) detected:
+  [BREAKING] New ERC warning: no_driver on BIASINV
+  [BREAKING] New ERC warning: no_driver on CH1
+  [BREAKING] New ERC warning: no_driver on CH2
+  [BREAKING] New ERC warning: no_driver on CH3
+  [BREAKING] New ERC warning: no_driver on CH4
+  [BREAKING] New ERC warning: no_driver on CH5
+  [BREAKING] New ERC warning: no_driver on CH6
+  [BREAKING] New ERC warning: no_driver on CH7
+  [BREAKING] New ERC warning: no_driver on CH8
+
+Components:
+  + J4 ELECTRODES Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical
+  + U10 TPD4E1B06DCKR Package_TO_SOT_SMD:SOT-363_SC-70-6
+  + U11 TPD4E1B06DCKR Package_TO_SOT_SMD:SOT-363_SC-70-6
+  + U12 TPD4E1B06DCKR Package_TO_SOT_SMD:SOT-363_SC-70-6
+  + R25 4.99k Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+
+Signal Analysis:
+  + New Connector Ground Audit: ref=J4 value=ELECTRODES
+  + New Rc Filters: ref=C55 type=RC-network resistor_ref=R25 capacitor_ref=C55
+  + New Rc Filters: ref=C55 type=RC-network resistor_ref=R33 capacitor_ref=C55
+  + New Rc Filters: ref=C56 type=RC-network resistor_ref=R26 capacitor_ref=C56
+
+  ... and 26 more changes

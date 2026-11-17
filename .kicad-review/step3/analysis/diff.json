@@ -1,0 +1,565 @@
+{
+  "diff_version": "1.0",
+  "analyzer_type": "schematic",
+  "base_file": "base/schematic.json",
+  "head_file": "current/schematic.json",
+  "has_changes": true,
+  "summary": {
+    "total_changes": 35,
+    "added": 35,
+    "removed": 0,
+    "modified": 0,
+    "severity": "breaking",
+    "regressions": 9
+  },
+  "diff": {
+    "statistics": {
+      "statistics.total_components": {
+        "base": 101,
+        "head": 125,
+        "delta": 24
+      },
+      "statistics.total_nets": {
+        "base": 119,
+        "head": 134,
+        "delta": 15
+      },
+      "statistics.unique_parts": {
+        "base": 39,
+        "head": 45,
+        "delta": 6
+      },
+      "statistics.total_no_connects": {
+        "base": 3,
+        "head": 16,
+        "delta": 13
+      }
+    },
+    "components": {
+      "added": [
+        {
+          "reference": "J4",
+          "value": "ELECTRODES",
+          "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical"
+        },
+        {
+          "reference": "U10",
+          "value": "TPD4E1B06DCKR",
+          "footprint": "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+        },
+        {
+          "reference": "U11",
+          "value": "TPD4E1B06DCKR",
+          "footprint": "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+        },
+        {
+          "reference": "U12",
+          "value": "TPD4E1B06DCKR",
+          "footprint": "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+        },
+        {
+          "reference": "R25",
+          "value": "4.99k",
+          "footprint": "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+        },
+        {
+          "reference": "R26",
+          "value": "4.99k",
+          "footprint": "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+        },
+        {
+          "reference": "R27",
+          "value": "4.99k",
+          "footprint": "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+        },
+        {
+          "reference": "R28",
+          "value": "4.99k",
+          "footprint": "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+        },
+        {
+          "reference": "R29",
+          "value": "4.99k",
+          "footprint": "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+        },
+        {
+          "reference": "R30",
+          "value": "4.99k",
+          "footprint": "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+        },
+        {
+          "reference": "R31",
+          "value": "4.99k",
+          "footprint": "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+        },
+        {
+          "reference": "R32",
+          "value": "4.99k",
+          "footprint": "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+        },
+        {
+          "reference": "R33",
+          "value": "4.99k",
+          "footprint": "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+        },
+        {
+          "reference": "R35",
+          "value": "100k",
+          "footprint": "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+        },
+        {
+          "reference": "C55",
+          "value": "4.7n C0G",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric"
+        },
+        {
+          "reference": "C56",
+          "value": "4.7n C0G",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric"
+        },
+        {
+          "reference": "C57",
+          "value": "4.7n C0G",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric"
+        },
+        {
+          "reference": "C58",
+          "value": "4.7n C0G",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric"
+        },
+        {
+          "reference": "C59",
+          "value": "4.7n C0G",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric"
+        },
+        {
+          "reference": "C60",
+          "value": "4.7n C0G",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric"
+        },
+        {
+          "reference": "C61",
+          "value": "4.7n C0G",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric"
+        },
+        {
+          "reference": "C62",
+          "value": "4.7n C0G",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric"
+        },
+        {
+          "reference": "R34",
+          "value": "1M",
+          "footprint": "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+        },
+        {
+          "reference": "C63",
+          "value": "1.5n C0G",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric"
+        }
+      ],
+      "removed": [],
+      "modified": []
+    },
+    "signal_analysis": {
+      "connector_ground_audit": {
+        "added": [
+          {
+            "ref": "J4",
+            "value": "ELECTRODES"
+          }
+        ],
+        "removed": [],
+        "modified": [],
+        "unchanged_count": 0
+      },
+      "rc_filters": {
+        "added": [
+          {
+            "ref": "C55",
+            "type": "RC-network",
+            "resistor_ref": "R25",
+            "capacitor_ref": "C55"
+          },
+          {
+            "ref": "C55",
+            "type": "RC-network",
+            "resistor_ref": "R33",
+            "capacitor_ref": "C55"
+          },
+          {
+            "ref": "C56",
+            "type": "RC-network",
+            "resistor_ref": "R26",
+            "capacitor_ref": "C56"
+          },
+          {
+            "ref": "C57",
+            "type": "RC-network",
+            "resistor_ref": "R27",
+            "capacitor_ref": "C57"
+          },
+          {
+            "ref": "C58",
+            "type": "RC-network",
+            "resistor_ref": "R28",
+            "capacitor_ref": "C58"
+          },
+          {
+            "ref": "C59",
+            "type": "RC-network",
+            "resistor_ref": "R29",
+            "capacitor_ref": "C59"
+          },
+          {
+            "ref": "C60",
+            "type": "RC-network",
+            "resistor_ref": "R30",
+            "capacitor_ref": "C60"
+          },
+          {
+            "ref": "C61",
+            "type": "RC-network",
+            "resistor_ref": "R31",
+            "capacitor_ref": "C61"
+          },
+          {
+            "ref": "C62",
+            "type": "RC-network",
+            "resistor_ref": "R32",
+            "capacitor_ref": "C62"
+          },
+          {
+            "ref": "C63",
+            "type": "RC-network",
+            "resistor_ref": "R35",
+            "capacitor_ref": "C63"
+          }
+        ],
+        "removed": [],
+        "modified": [],
+        "unchanged_count": 1
+      }
+    },
+    "bom": {
+      "added": [
+        {
+          "value": "4.7n C0G",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "quantity": 8
+        },
+        {
+          "value": "1.5n C0G",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric",
+          "quantity": 1
+        },
+        {
+          "value": "ELECTRODES",
+          "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical",
+          "quantity": 1
+        },
+        {
+          "value": "4.99k",
+          "footprint": "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder",
+          "quantity": 9
+        },
+        {
+          "value": "1M",
+          "footprint": "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder",
+          "quantity": 1
+        },
+        {
+          "value": "TPD4E1B06DCKR",
+          "footprint": "Package_TO_SOT_SMD:SOT-363_SC-70-6",
+          "quantity": 3
+        }
+      ],
+      "removed": [],
+      "quantity_changes": [
+        {
+          "value": "100k",
+          "footprint": "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder",
+          "base_qty": 4,
+          "head_qty": 5,
+          "delta": 1
+        }
+      ]
+    },
+    "erc": {
+      "new_warnings": [
+        {
+          "type": "no_driver",
+          "net": "BIASINV",
+          "message": "Net 'BIASINV' has input pins but no output driver",
+          "pins": [
+            {
+              "component": "U3",
+              "pin_number": "61",
+              "pin_name": "BIASINV",
+              "pin_type": "input"
+            },
+            {
+              "component": "R34",
+              "pin_number": "1",
+              "pin_name": "~",
+              "pin_type": "passive"
+            },
+            {
+              "component": "C63",
+              "pin_number": "1",
+              "pin_name": "~",
+              "pin_type": "passive"
+            }
+          ]
+        },
+        {
+          "type": "no_driver",
+          "net": "CH1",
+          "message": "Net 'CH1' has input pins but no output driver",
+          "pins": [
+            {
+              "component": "U3",
+              "pin_number": "16",
+              "pin_name": "IN1P",
+              "pin_type": "input"
+            },
+            {
+              "component": "R25",
+              "pin_number": "2",
+              "pin_name": "~",
+              "pin_type": "passive"
+            },
+            {
+              "component": "C55",
+              "pin_number": "1",
+              "pin_name": "~",
+              "pin_type": "passive"
+            }
+          ]
+        },
+        {
+          "type": "no_driver",
+          "net": "CH2",
+          "message": "Net 'CH2' has input pins but no output driver",
+          "pins": [
+            {
+              "component": "U3",
+              "pin_number": "14",
+              "pin_name": "IN2P",
+              "pin_type": "input"
+            },
+            {
+              "component": "R26",
+              "pin_number": "2",
+              "pin_name": "~",
+              "pin_type": "passive"
+            },
+            {
+              "component": "C56",
+              "pin_number": "1",
+              "pin_name": "~",
+              "pin_type": "passive"
+            }
+          ]
+        },
+        {
+          "type": "no_driver",
+          "net": "CH3",
+          "message": "Net 'CH3' has input pins but no output driver",
+          "pins": [
+            {
+              "component": "U3",
+              "pin_number": "12",
+              "pin_name": "IN3P",
+              "pin_type": "input"
+            },
+            {
+              "component": "R27",
+              "pin_number": "2",
+              "pin_name": "~",
+              "pin_type": "passive"
+            },
+            {
+              "component": "C57",
+              "pin_number": "1",
+              "pin_name": "~",
+              "pin_type": "passive"
+            }
+          ]
+        },
+        {
+          "type": "no_driver",
+          "net": "CH4",
+          "message": "Net 'CH4' has input pins but no output driver",
+          "pins": [
+            {
+              "component": "U3",
+              "pin_number": "10",
+              "pin_name": "IN4P",
+              "pin_type": "input"
+            },
+            {
+              "component": "R28",
+              "pin_number": "2",
+              "pin_name": "~",
+              "pin_type": "passive"
+            },
+            {
+              "component": "C58",
+              "pin_number": "1",
+              "pin_name": "~",
+              "pin_type": "passive"
+            }
+          ]
+        },
+        {
+          "type": "no_driver",
+          "net": "CH5",
+          "message": "Net 'CH5' has input pins but no output driver",
+          "pins": [
+            {
+              "component": "U3",
+              "pin_number": "8",
+              "pin_name": "IN5P",
+              "pin_type": "input"
+            },
+            {
+              "component": "R29",
+              "pin_number": "2",
+              "pin_name": "~",
+              "pin_type": "passive"
+            },
+            {
+              "component": "C59",
+              "pin_number": "1",
+              "pin_name": "~",
+              "pin_type": "passive"
+            }
+          ]
+        },
+        {
+          "type": "no_driver",
+          "net": "CH6",
+          "message": "Net 'CH6' has input pins but no output driver",
+          "pins": [
+            {
+              "component": "U3",
+              "pin_number": "6",
+              "pin_name": "IN6P",
+              "pin_type": "input"
+            },
+            {
+              "component": "R30",
+              "pin_number": "2",
+              "pin_name": "~",
+              "pin_type": "passive"
+            },
+            {
+              "component": "C60",
+              "pin_number": "1",
+              "pin_name": "~",
+              "pin_type": "passive"
+            }
+          ]
+        },
+        {
+          "type": "no_driver",
+          "net": "CH7",
+          "message": "Net 'CH7' has input pins but no output driver",
+          "pins": [
+            {
+              "component": "U3",
+              "pin_number": "4",
+              "pin_name": "IN7P",
+              "pin_type": "input"
+            },
+            {
+              "component": "R31",
+              "pin_number": "2",
+              "pin_name": "~",
+              "pin_type": "passive"
+            },
+            {
+              "component": "C61",
+              "pin_number": "1",
+              "pin_name": "~",
+              "pin_type": "passive"
+            }
+          ]
+        },
+        {
+          "type": "no_driver",
+          "net": "CH8",
+          "message": "Net 'CH8' has input pins but no output driver",
+          "pins": [
+            {
+              "component": "U3",
+              "pin_number": "2",
+              "pin_name": "IN8P",
+              "pin_type": "input"
+            },
+            {
+              "component": "R32",
+              "pin_number": "2",
+              "pin_name": "~",
+              "pin_type": "passive"
+            },
+            {
+              "component": "C62",
+              "pin_number": "1",
+              "pin_name": "~",
+              "pin_type": "passive"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "regressions": [
+    {
+      "category": "erc",
+      "severity": "breaking",
+      "detail": "New ERC warning: no_driver on BIASINV"
+    },
+    {
+      "category": "erc",
+      "severity": "breaking",
+      "detail": "New ERC warning: no_driver on CH1"
+    },
+    {
+      "category": "erc",
+      "severity": "breaking",
+      "detail": "New ERC warning: no_driver on CH2"
+    },
+    {
+      "category": "erc",
+      "severity": "breaking",
+      "detail": "New ERC warning: no_driver on CH3"
+    },
+    {
+      "category": "erc",
+      "severity": "breaking",
+      "detail": "New ERC warning: no_driver on CH4"
+    },
+    {
+      "category": "erc",
+      "severity": "breaking",
+      "detail": "New ERC warning: no_driver on CH5"
+    },
+    {
+      "category": "erc",
+      "severity": "breaking",
+      "detail": "New ERC warning: no_driver on CH6"
+    },
+    {
+      "category": "erc",
+      "severity": "breaking",
+      "detail": "New ERC warning: no_driver on CH7"
+    },
+    {
+      "category": "erc",
+      "severity": "breaking",
+      "detail": "New ERC warning: no_driver on CH8"
+    }
+  ]
+}

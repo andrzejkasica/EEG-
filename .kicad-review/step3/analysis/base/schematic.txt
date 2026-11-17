@@ -1,0 +1,434 @@
+=== Design Analysis ===
+
+--- analog ---
+  [1] INFO AD-DET: ADC U3 (ADS1299)
+      Detail: Detected external ADC U3.
+      Component: U3
+      Stages: schematic
+
+--- connectivity ---
+  [2] WARNING NT-001: Single-pin net: U1.PD2 only connects to U1.54 (PD2) (bidirectional)
+      Detail: Net '__unnamed_1' has exactly one pin: U1.54 (PD2), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [3] WARNING NT-001: Single-pin net: U1.PC10 only connects to U1.51 (PC10) (bidirectional)
+      Detail: Net '__unnamed_10' has exactly one pin: U1.51 (PC10), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [4] WARNING NT-001: Single-pin net: U1.PC11 only connects to U1.52 (PC11) (bidirectional)
+      Detail: Net '__unnamed_11' has exactly one pin: U1.52 (PC11), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [5] WARNING NT-001: Single-pin net: U1.PC12 only connects to U1.53 (PC12) (bidirectional)
+      Detail: Net '__unnamed_12' has exactly one pin: U1.53 (PC12), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [6] WARNING NT-001: Single-pin net: U1.PC13 only connects to U1.2 (PC13) (bidirectional)
+      Detail: Net '__unnamed_13' has exactly one pin: U1.2 (PC13), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [7] WARNING NT-001: Single-pin net: U1.PC14 only connects to U1.3 (PC14) (bidirectional)
+      Detail: Net '__unnamed_14' has exactly one pin: U1.3 (PC14), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [8] WARNING NT-001: Single-pin net: U1.PC15 only connects to U1.4 (PC15) (bidirectional)
+      Detail: Net '__unnamed_15' has exactly one pin: U1.4 (PC15), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [9] WARNING NT-001: Single-pin net: U1.PA0 only connects to U1.14 (PA0) (bidirectional)
+      Detail: Net '__unnamed_16' has exactly one pin: U1.14 (PA0), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [10] WARNING NT-001: Single-pin net: U1.PA1 only connects to U1.15 (PA1) (bidirectional)
+      Detail: Net '__unnamed_17' has exactly one pin: U1.15 (PA1), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [11] WARNING NT-001: Single-pin net: U1.PA2 only connects to U1.16 (PA2) (bidirectional)
+      Detail: Net '__unnamed_18' has exactly one pin: U1.16 (PA2), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [12] WARNING NT-001: Single-pin net: U1.PA3 only connects to U1.17 (PA3) (bidirectional)
+      Detail: Net '__unnamed_19' has exactly one pin: U1.17 (PA3), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [13] WARNING NT-001: Single-pin net: U1.PC0 only connects to U1.8 (PC0) (bidirectional)
+      Detail: Net '__unnamed_2' has exactly one pin: U1.8 (PC0), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [14] WARNING NT-001: Single-pin net: U1.PA8 only connects to U1.41 (PA8) (bidirectional)
+      Detail: Net '__unnamed_20' has exactly one pin: U1.41 (PA8), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [15] WARNING NT-001: Single-pin net: U1.PA9 only connects to U1.42 (PA9) (bidirectional)
+      Detail: Net '__unnamed_21' has exactly one pin: U1.42 (PA9), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [16] WARNING NT-001: Single-pin net: U1.PA10 only connects to U1.43 (PA10) (bidirectional)
+      Detail: Net '__unnamed_22' has exactly one pin: U1.43 (PA10), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [17] WARNING NT-001: Single-pin net: U1.PA15 only connects to U1.50 (PA15) (bidirectional)
+      Detail: Net '__unnamed_23' has exactly one pin: U1.50 (PA15), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [18] WARNING NT-001: Single-pin net: U1.PB2 only connects to U1.28 (PB2) (bidirectional)
+      Detail: Net '__unnamed_24' has exactly one pin: U1.28 (PB2), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [19] WARNING NT-001: Single-pin net: U1.PB5 only connects to U1.57 (PB5) (bidirectional)
+      Detail: Net '__unnamed_25' has exactly one pin: U1.57 (PB5), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [20] WARNING NT-001: Single-pin net: U1.PB6 only connects to U1.58 (PB6) (bidirectional)
+      Detail: Net '__unnamed_26' has exactly one pin: U1.58 (PB6), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [21] WARNING NT-001: Single-pin net: U1.PB7 only connects to U1.59 (PB7) (bidirectional)
+      Detail: Net '__unnamed_27' has exactly one pin: U1.59 (PB7), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [22] WARNING NT-001: Single-pin net: U1.PB8 only connects to U1.61 (PB8) (bidirectional)
+      Detail: Net '__unnamed_28' has exactly one pin: U1.61 (PB8), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [23] WARNING NT-001: Single-pin net: U1.PB9 only connects to U1.62 (PB9) (bidirectional)
+      Detail: Net '__unnamed_29' has exactly one pin: U1.62 (PB9), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [24] WARNING NT-001: Single-pin net: U1.PC1 only connects to U1.9 (PC1) (bidirectional)
+      Detail: Net '__unnamed_3' has exactly one pin: U1.9 (PC1), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [25] WARNING NT-001: Single-pin net: U1.PB13 only connects to U1.34 (PB13) (bidirectional)
+      Detail: Net '__unnamed_30' has exactly one pin: U1.34 (PB13), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [26] WARNING NT-001: Single-pin net: U1.PB14 only connects to U1.35 (PB14) (bidirectional)
+      Detail: Net '__unnamed_31' has exactly one pin: U1.35 (PB14), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [27] WARNING NT-001: Single-pin net: U1.PB15 only connects to U1.36 (PB15) (bidirectional)
+      Detail: Net '__unnamed_32' has exactly one pin: U1.36 (PB15), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [28] WARNING NT-001: Single-pin net: U1.PC2 only connects to U1.10 (PC2) (bidirectional)
+      Detail: Net '__unnamed_4' has exactly one pin: U1.10 (PC2), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [29] WARNING NT-001: Single-pin net: U1.PC3 only connects to U1.11 (PC3) (bidirectional)
+      Detail: Net '__unnamed_5' has exactly one pin: U1.11 (PC3), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [30] WARNING NT-001: Single-pin net: U1.PC6 only connects to U1.37 (PC6) (bidirectional)
+      Detail: Net '__unnamed_6' has exactly one pin: U1.37 (PC6), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [31] WARNING NT-001: Single-pin net: U1.PC7 only connects to U1.38 (PC7) (bidirectional)
+      Detail: Net '__unnamed_7' has exactly one pin: U1.38 (PC7), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [32] WARNING NT-001: Single-pin net: U1.PC8 only connects to U1.39 (PC8) (bidirectional)
+      Detail: Net '__unnamed_8' has exactly one pin: U1.39 (PC8), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [33] WARNING NT-001: Single-pin net: U1.PC9 only connects to U1.40 (PC9) (bidirectional)
+      Detail: Net '__unnamed_9' has exactly one pin: U1.40 (PC9), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [34] WARNING NT-001: Single-pin net: U3.IN1P only connects to U3.16 (IN1P) (input)
+      Detail: Net '__unnamed_56' has exactly one pin: U3.16 (IN1P), pin_type='input'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [35] WARNING NT-001: Single-pin net: U3.IN1N only connects to U3.15 (IN1N) (input)
+      Detail: Net '__unnamed_57' has exactly one pin: U3.15 (IN1N), pin_type='input'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [36] WARNING NT-001: Single-pin net: U3.IN2P only connects to U3.14 (IN2P) (input)
+      Detail: Net '__unnamed_58' has exactly one pin: U3.14 (IN2P), pin_type='input'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [37] WARNING NT-001: Single-pin net: U3.IN2N only connects to U3.13 (IN2N) (input)
+      Detail: Net '__unnamed_59' has exactly one pin: U3.13 (IN2N), pin_type='input'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [38] WARNING NT-001: Single-pin net: U3.IN3P only connects to U3.12 (IN3P) (input)
+      Detail: Net '__unnamed_60' has exactly one pin: U3.12 (IN3P), pin_type='input'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [39] WARNING NT-001: Single-pin net: U3.IN3N only connects to U3.11 (IN3N) (input)
+      Detail: Net '__unnamed_61' has exactly one pin: U3.11 (IN3N), pin_type='input'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [40] WARNING NT-001: Single-pin net: U3.IN4P only connects to U3.10 (IN4P) (input)
+      Detail: Net '__unnamed_62' has exactly one pin: U3.10 (IN4P), pin_type='input'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [41] WARNING NT-001: Single-pin net: U3.IN4N only connects to U3.9 (IN4N) (input)
+      Detail: Net '__unnamed_63' has exactly one pin: U3.9 (IN4N), pin_type='input'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [42] WARNING NT-001: Single-pin net: U3.IN5P only connects to U3.8 (IN5P) (input)
+      Detail: Net '__unnamed_64' has exactly one pin: U3.8 (IN5P), pin_type='input'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [43] WARNING NT-001: Single-pin net: U3.IN5N only connects to U3.7 (IN5N) (input)
+      Detail: Net '__unnamed_65' has exactly one pin: U3.7 (IN5N), pin_type='input'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [44] WARNING NT-001: Single-pin net: U3.IN6P only connects to U3.6 (IN6P) (input)
+      Detail: Net '__unnamed_66' has exactly one pin: U3.6 (IN6P), pin_type='input'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [45] WARNING NT-001: Single-pin net: U3.IN6N only connects to U3.5 (IN6N) (input)
+      Detail: Net '__unnamed_67' has exactly one pin: U3.5 (IN6N), pin_type='input'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [46] WARNING NT-001: Single-pin net: U3.IN7P only connects to U3.4 (IN7P) (input)
+      Detail: Net '__unnamed_68' has exactly one pin: U3.4 (IN7P), pin_type='input'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [47] WARNING NT-001: Single-pin net: U3.IN7N only connects to U3.3 (IN7N) (input)
+      Detail: Net '__unnamed_69' has exactly one pin: U3.3 (IN7N), pin_type='input'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [48] WARNING NT-001: Single-pin net: U3.IN8P only connects to U3.2 (IN8P) (input)
+      Detail: Net '__unnamed_70' has exactly one pin: U3.2 (IN8P), pin_type='input'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [49] WARNING NT-001: Single-pin net: U3.IN8N only connects to U3.1 (IN8N) (input)
+      Detail: Net '__unnamed_71' has exactly one pin: U3.1 (IN8N), pin_type='input'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [50] WARNING NT-001: Single-pin net: U3.BIASOUT only connects to U3.63 (BIASOUT) (output)
+      Detail: Net '__unnamed_74' has exactly one pin: U3.63 (BIASOUT), pin_type='output'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [51] WARNING NT-001: Single-pin net: U3.BIASINV only connects to U3.61 (BIASINV) (input)
+      Detail: Net '__unnamed_75' has exactly one pin: U3.61 (BIASINV), pin_type='input'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [52] WARNING NT-001: Single-pin net: U3.BIASIN only connects to U3.62 (BIASIN) (input)
+      Detail: Net '__unnamed_76' has exactly one pin: U3.62 (BIASIN), pin_type='input'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [53] WARNING NT-001: Single-pin net: U3.BIASREF only connects to U3.60 (BIASREF) (input)
+      Detail: Net '__unnamed_77' has exactly one pin: U3.60 (BIASREF), pin_type='input'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [54] WARNING NT-001: Single-pin net: U3.SRB1 only connects to U3.17 (SRB1) (bidirectional)
+      Detail: Net '__unnamed_78' has exactly one pin: U3.17 (SRB1), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [55] WARNING NT-001: Single-pin net: U3.SRB2 only connects to U3.18 (SRB2) (bidirectional)
+      Detail: Net '__unnamed_79' has exactly one pin: U3.18 (SRB2), pin_type='bidirectional'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [56] INFO NT-001: Single-pin net: UD+ only connects to U8.6 (I/O1) (passive)
+      Detail: Net 'UD+' has exactly one pin: U8.6 (I/O1), pin_type='passive'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+  [57] INFO NT-001: Single-pin net: UD- only connects to U8.4 (I/O2) (passive)
+      Detail: Net 'UD-' has exactly one pin: U8.4 (I/O2), pin_type='passive'. Verify the intended target — if this pin should connect somewhere, the wire/label is missing.
+      Fix:    Check the schematic at the referenced pin — add the missing wire or place a no-connect marker if the pin is intentionally floating.
+      Stages: schematic
+
+--- crystal ---
+  [58] INFO DO-DET: Crystal load cap Y1 = 10.5pF
+      Detail: Crystal load capacitance observation
+      Component: Y1
+      Stages: schematic
+
+--- debug ---
+  [59] INFO DI-DET: Debug interface J3 (swd): pass
+      Detail: Detected swd debug interface on connector J3.
+      Stages: schematic, bring_up
+
+--- decoupling ---
+  [60] INFO DC-DET: Decoupling on +3V3
+      Detail: Decoupling capacitors on power rail +3V3
+      Stages: schematic, layout
+  [61] INFO DC-DET: Decoupling on +5V
+      Detail: Decoupling capacitors on power rail +5V
+      Stages: schematic, layout
+  [62] INFO DC-DET: Decoupling on -5V
+      Detail: Decoupling capacitors on power rail -5V
+      Stages: schematic, layout
+  [63] INFO DC-DET: Decoupling on +2V5
+      Detail: Decoupling capacitors on power rail +2V5
+      Stages: schematic, layout
+  [64] INFO DC-DET: Decoupling on -2V5
+      Detail: Decoupling capacitors on power rail -2V5
+      Stages: schematic, layout
+  [65] INFO DC-DET: Decoupling on +5V_PRI
+      Detail: Decoupling capacitors on power rail +5V_PRI
+      Stages: schematic, layout
+  [66] INFO DC-DET: Decoupling on VDD1_ISO1
+      Detail: Decoupling capacitors on power rail VDD1_ISO1
+      Stages: schematic, layout
+
+--- decoupling_coverage ---
+  [67] INFO DO-DET: Decoupling coverage on +3V3
+      Detail: Decoupling frequency coverage for rail +3V3
+      Stages: schematic
+  [68] INFO DO-DET: Decoupling coverage on +5V
+      Detail: Decoupling frequency coverage for rail +5V
+      Stages: schematic
+  [69] INFO DO-DET: Decoupling coverage on -5V
+      Detail: Decoupling frequency coverage for rail -5V
+      Stages: schematic
+  [70] INFO DO-DET: Decoupling coverage on +2V5
+      Detail: Decoupling frequency coverage for rail +2V5
+      Stages: schematic
+  [71] INFO DO-DET: Decoupling coverage on -2V5
+      Detail: Decoupling frequency coverage for rail -2V5
+      Stages: schematic
+  [72] INFO DO-DET: Decoupling coverage on +5V_PRI
+      Detail: Decoupling frequency coverage for rail +5V_PRI
+      Stages: schematic
+  [73] INFO DO-DET: Decoupling coverage on VDD1_ISO1
+      Detail: Decoupling frequency coverage for rail VDD1_ISO1
+      Stages: schematic
+
+--- isolation ---
+  [74] INFO IB-DET: Isolation barrier: 2 ground domains, 2 isolation component(s)
+      Detail: Detected galvanic isolation with 2 ground domains.
+      Stages: schematic
+
+--- led_control ---
+  [75] INFO LA-AUD: LED D1 (LED) [resistor_limited]
+      Detail: LED audit: D1 using resistor_limited drive method.
+      Component: D1
+      Stages: schematic
+  [76] INFO LA-AUD: LED D2 (LED) [resistor_limited]
+      Detail: LED audit: D2 using resistor_limited drive method.
+      Component: D2
+      Stages: schematic
+
+--- lifecycle ---
+  [77] INFO LC-007: Lifecycle audit not run — --lifecycle flag not passed
+      Detail: Component lifecycle / obsolescence audit was not run this session. Reason: --lifecycle flag not passed (run with --lifecycle to query DigiKey / Mouser / LCSC / element14 for obsolescence + operating-temp coverage; requires network + API keys). The review cannot report active / NRND / EOL / obsolete status, last-time-buy windows, or operating-temperature coverage for any BOM part. Treat the lifecycle section of the report as 'not performed'.
+      Fix:    Run with --lifecycle (requires DIGIKEY_CLIENT_ID / MOUSER_SEARCH_API_KEY / ELEMENT14_API_KEY env vars; LCSC needs no auth) to populate this section. If intentionally skipped, note it explicitly in the report's 'Not Performed' section.
+      Stages: schematic
+
+--- passive_filters ---
+  [78] INFO LC-DET: LC filter at 25291.38Hz
+      Detail: LC filter with parallel capacitors
+      Stages: schematic
+  [79] INFO LC-DET: LC filter at 26415.99Hz
+      Detail: LC filter with parallel capacitors
+      Stages: schematic
+  [80] INFO LC-DET: LC filter at 24981.05Hz
+      Detail: LC filter with parallel capacitors
+      Stages: schematic
+  [81] INFO LC-DET: LC filter at 25083.22Hz
+      Detail: LC filter with parallel capacitors
+      Stages: schematic
+  [82] INFO RC-DET: RC filter R1/C7 at 159.15Hz
+      Detail: low-pass RC filter
+      Stages: schematic
+
+--- power_integrity ---
+  [83] INFO PS-001: Regulator U5: PG status unknown for TLV75733PDBV (no datasheet extraction)
+      Detail: Regulator U5 (TLV75733PDBV) supplies +3V3 to U1, U1, U1 but PG status is unknown. Run sync_datasheets to verify.
+      Fix:    Run sync_datasheets to verify whether TLV75733PDBV has a PG pin.
+      Stages: schematic
+
+--- power_management ---
+  [84] INFO PR-DET: Regulator U1 ic_with_internal_regulator
+      Detail: Power regulator (ic_with_internal_regulator) detected
+      Component: U1
+      Stages: schematic
+  [85] INFO PR-DET: Regulator U2 charge_pump
+      Detail: Power regulator (charge_pump) detected
+      Component: U2
+      Stages: schematic
+  [86] INFO PR-DET: Regulator U4 LDO
+      Detail: Power regulator (LDO) detected
+      Component: U4
+      Stages: schematic
+  [87] INFO PR-DET: Regulator U5 LDO
+      Detail: Power regulator (LDO) detected
+      Component: U5
+      Stages: schematic
+  [88] INFO PR-DET: Regulator U6 LDO
+      Detail: Power regulator (LDO) detected
+      Component: U6
+      Stages: schematic
+  [89] INFO RS-DET: RC reset network on NRST (1.0 ms)
+      Detail: Detected RC reset network on net NRST.
+      Stages: schematic, bring_up
+
+--- protection ---
+  [90] INFO EP-AUD: ESD audit J1 (generic): partial coverage
+      Detail: ESD protection audit for generic connector J1: partial coverage.
+      Stages: schematic
+  [91] INFO EP-AUD: ESD audit J2 (uart): none coverage
+      Detail: ESD protection audit for uart connector J2: none coverage.
+      Stages: schematic
+  [92] INFO EP-AUD: ESD audit J3 (header): none coverage
+      Detail: ESD protection audit for header connector J3: none coverage.
+      Stages: schematic
+  [93] INFO PD-DET: Protection U8 esd_ic
+      Detail: IC-based ESD protection device detected
+      Component: U8
+      Stages: schematic
+
+--- regulator_caps ---
+  [94] INFO DO-DET: Regulator U2 missing capacitors
+      Detail: Regulator missing input or output capacitors
+      Component: U2
+      Stages: schematic
+  [95] INFO DO-DET: Regulator U4 missing capacitors
+      Detail: Regulator missing input or output capacitors
+      Component: U4
+      Stages: schematic
+  [96] INFO DO-DET: Regulator U6 missing capacitors
+      Detail: Regulator missing input or output capacitors
+      Component: U6
+      Stages: schematic
+
+--- reset_pin ---
+  [97] INFO DO-DET: Reset pin on U1 (NRST)
+      Detail: Reset pin configuration for U1
+      Component: U1
+      Stages: schematic
+  [98] INFO DO-DET: Reset pin on U3 (~{RESET})
+      Detail: Reset pin configuration for U3
+      Component: U3
+      Stages: schematic
+
+--- single_pin_nets ---
+  [99] INFO DO-DET: Single-pin nets (2 nets)
+      Detail: Signal nets connected to only one pin
+      Stages: schematic
+
+--- sourcing ---
+  [100] ERROR SS-001: Sourcing blocker: BOM has <50% MPN coverage (0/33 unique parts). Board is not pre-fab ready.
+      Detail: Sourcing audit: 0 of 33 unique BOM lines (grouped by value + footprint) carry a manufacturer part number (0.0%). Pre-fab readiness requires 100% coverage; production assembly requires all parts sourceable via one of the supported distributors.
+      Fix:    Populate the MPN field on the listed refs (use the digikey / mouser / lcsc / element14 skill to search by value/footprint when the MPN isn't already known).
+      Stages: pre_fab
+
+--- timing ---
+  [101] INFO XL-DET: Crystal Y1 at 8000000.0Hz
+      Detail: Crystal oscillator circuit detected
+      Stages: schematic
+
+--- topology ---
+  [102] WARNING SJ-DET: JP1 (Jumper_2_Open) — open by default, between BOOT0 ↔ +3V3
+      Fix:    Open solder jumper is non-conducting until the pads are soldered. If either side is a power rail or required signal, the board won't function without the solder step.
+      Stages: schematic
+
+--- usb_data ---
+  [103] INFO DO-DET: USB data line D+
+      Detail: USB data net D+ detected
+      Stages: schematic
+  [104] INFO DO-DET: USB data line D-
+      Detail: USB data net D- detected
+      Stages: schematic
+
+--- verification ---
+  [105] ERROR DS-001: No datasheets directory found and no BOM parts have MPNs. Review is a consistency check only — manufacturer specs cannot be verified.
+      Fix:    Before reporting 'verified' findings, (1) populate the MPN field on BOM parts, (2) run the datasheet sync skill (digikey, mouser, lcsc, or element14) to download PDFs into ./datasheets/, then re-run analysis. If datasheets are unreachable, state every pin-level and electrical claim as 'per symbol/library' (consistency), not 'verified against datasheet' (correctness).
+      Stages: schematic
+
+Total: 105 (2 errors, 55 warnings, 48 info)
