@@ -14,7 +14,7 @@ Research came from two read-only agents, merged here on 2026-11-16.
 - **Every ADS1299 control line gets its own GPIO.** START is not tied low: free pins are plentiful, and a GPIO keeps hardware start sync available.
 - **Pull resistors sit next to U3,** so U3's inputs have a defined level while the STM32 is in reset with hi-Z pins.
   - START, RESET and PWDN are pulled down. §11.1 wants every input low until the supplies are stable, so the chip stays in reset and power-down until firmware releases it.
-  - CS is pulled up, so the SPI interface stays idle (§9.5.2.1).
+  - CS is pulled up to DVDD (+3V3) on purpose. It is referenced to the same rail that powers DVDD, so it can never exceed DVDD + 0.3 V, and an input driven above an unpowered supply is the actual hazard §11.1 guards against. Holding CS high keeps the SPI port reset and DOUT high-Z (§9.5.2.1), so floating SCLK/DIN cannot clock in data during MCU reset. Power-up gating is done by RESET and PWDN, which are held low. *(Corrected 2026-11-17, review finding F-013 / S5-INFO-F013.)*
 - **No series resistors on the SPI lines.** The TI EVM has none, and the traces are short on one board.
 - **Patient safety: SWD and UART headers are on the isolated (patient) side.** Plugging in a mains-powered PC through them bypasses the USB isolation barrier. Use them only with no electrodes on a person, or through a USB isolator. Both headers deliberately have no +3V3 output pin except SWD VTref, which is a sense pin.
 

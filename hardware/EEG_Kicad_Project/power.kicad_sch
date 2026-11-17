@@ -5,6 +5,113 @@
 	(uuid "07c60467-ede2-4465-af35-c7295e3dbbe2")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Converter_DCDC:TMU3-0511"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -329,6 +436,156 @@
 					(at 0 -3.81 90)
 					(length 2.794)
 					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:D_Schottky"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Schottky"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Schottky diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Schottky_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Schottky_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2475,6 +2732,12 @@
 		(uuid "9718e03a-3443-4594-a235-e6911ed76e1d")
 	)
 	(junction
+		(at 71.12 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a87f98aa-c6a8-4fd1-ae15-ae91b01273aa")
+	)
+	(junction
 		(at 99.06 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2543,6 +2806,16 @@
 			(type default)
 		)
 		(uuid "03d9cc47-60e5-43ee-80b7-2a63b309e1b1")
+	)
+	(wire
+		(pts
+			(xy 71.12 100.33) (xy 71.12 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04125d59-6645-46d3-9955-4b74e0a05652")
 	)
 	(wire
 		(pts
@@ -2683,6 +2956,16 @@
 			(type default)
 		)
 		(uuid "1ec0b2cc-a2e8-44e4-990b-ec1932878767")
+	)
+	(wire
+		(pts
+			(xy 64.77 100.33) (xy 71.12 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f94f099-7815-4406-9db7-95e9f8e146cd")
 	)
 	(wire
 		(pts
@@ -2866,6 +3149,16 @@
 	)
 	(wire
 		(pts
+			(xy 166.37 62.23) (xy 166.37 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "447ff430-9910-4d1c-8e48-87a2fc13083a")
+	)
+	(wire
+		(pts
 			(xy 257.81 62.23) (xy 257.81 66.04)
 		)
 		(stroke
@@ -2903,6 +3196,16 @@
 			(type default)
 		)
 		(uuid "4ac77fdc-40e7-40c0-a46a-3a86f637399f")
+	)
+	(wire
+		(pts
+			(xy 48.26 113.03) (xy 48.26 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e3df04a-ea35-4091-96e4-c09fcc898dcd")
 	)
 	(wire
 		(pts
@@ -3253,16 +3556,6 @@
 			(type default)
 		)
 		(uuid "a50e65dc-3259-46a1-8667-963d88055d92")
-	)
-	(wire
-		(pts
-			(xy 166.37 62.23) (xy 168.91 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a528380f-6c44-4960-a2ea-a794247aff90")
 	)
 	(wire
 		(pts
@@ -3656,6 +3949,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 54.61) (xy 173.99 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0dc815b-6c06-432a-85f1-aca916c50104")
+	)
+	(wire
+		(pts
 			(xy 212.09 73.66) (xy 218.44 73.66)
 		)
 		(stroke
@@ -3834,6 +4137,36 @@
 		)
 		(uuid "fee5d5c7-08dc-48d7-910e-42c62d9b899e")
 	)
+	(wire
+		(pts
+			(xy 48.26 100.33) (xy 57.15 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff37c87f-2e01-4726-9114-0558bc7bbaa6")
+	)
+	(label "5V_REG"
+		(at 173.99 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "20beb378-2f8d-44ca-bc87-fbd96a046c65")
+	)
+	(label "5V_L1"
+		(at 166.37 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ba057924-9322-4177-8299-fd365f2a83c8")
+	)
 	(symbol
 		(lib_id "power:GNDA")
 		(at 168.91 132.08 0)
@@ -3895,6 +4228,100 @@
 			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
 					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 170.18 54.61 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0ba97cbe-b8d2-4e58-8499-1d17175784e7")
+		(property "Reference" "R41"
+			(at 170.18 52.578 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 170.18 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 170.18 56.388 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 170.18 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17168"
+			(at 170.18 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0402WGF0000TCE"
+			(at 170.18 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "jumper"
+			(at 170.18 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9b5d3b0c-8edf-434f-8696-432ec92f6c93")
+		)
+		(pin "2"
+			(uuid "9efabf3a-0e1b-4198-847d-96d9cfa8e09f")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -4298,6 +4725,71 @@
 			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
 					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:-5V")
+		(at 101.6 166.37 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1de77183-94c2-4670-8b94-d3a8ac93b79f")
+		(property "Reference" "#PWR0134"
+			(at 101.6 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "-5V"
+			(at 100.838 161.544 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-5V\""
+			(at 101.6 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e257481d-561d-449c-9799-dc44b1ba5136")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
+					(reference "#PWR0134")
 					(unit 1)
 				)
 			)
@@ -4772,6 +5264,71 @@
 			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
 					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 88.9 165.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3a196734-ea10-474b-aa61-7eccfa9bc5fd")
+		(property "Reference" "#PWR0133"
+			(at 88.9 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 88.646 161.544 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 88.9 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "75f6fa7a-e54d-4939-a446-9ff7ba3c423b")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
+					(reference "#PWR0133")
 					(unit 1)
 				)
 			)
@@ -5948,6 +6505,70 @@
 			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 101.6 166.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "76ee40ee-4087-4259-816f-6c531a236cd1")
+		(property "Reference" "TP9"
+			(at 101.6 159.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "-5V"
+			(at 101.346 171.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 106.68 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 101.6 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9704e3ac-b621-456f-b986-acd8178eee4f")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
+					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -8079,6 +8700,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 60.96 100.33 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ea7093a7-63f2-42d9-a3ae-181e3471ce42")
+		(property "Reference" "D3"
+			(at 57.404 99.314 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N5819WS"
+			(at 60.96 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 60.96 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 60.96 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C191023"
+			(at 60.96 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "1N5819WS"
+			(at 60.96 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0bbcd254-07a6-4e37-a9f2-0264e00cca5d")
+		)
+		(pin "2"
+			(uuid "b4378430-d02d-4656-be65-659a2e04d091")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 229.87 115.57 0)
 		(unit 1)
@@ -8143,6 +8849,70 @@
 			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
 					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 88.9 165.1 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ec319c3a-3b87-4f6b-b7ce-e0616ebbd1db")
+		(property "Reference" "TP8"
+			(at 88.9 159.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 88.9 171.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 83.82 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 88.9 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4d8c0866-55f1-4820-aeff-6ee6b6c64f63")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56"
+					(reference "TP8")
 					(unit 1)
 				)
 			)

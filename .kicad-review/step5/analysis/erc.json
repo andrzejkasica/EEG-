@@ -1,0 +1,63 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-17T17:54:42+0100",
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "9.0.9",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/f077bb96-fdd8-4d67-8482-ecc439e899e7",
+            "violations": []
+        },
+        {
+            "path": "/STM32/",
+            "uuid_path": "/f077bb96-fdd8-4d67-8482-ecc439e899e7/088aea0a-da05-47a8-ac1b-bdebb168844a",
+            "violations": []
+        },
+        {
+            "path": "/ANALOG_IN/",
+            "uuid_path": "/f077bb96-fdd8-4d67-8482-ecc439e899e7/d98eeb69-7662-4ed7-9abe-731140c82755",
+            "violations": []
+        },
+        {
+            "path": "/USBC/",
+            "uuid_path": "/f077bb96-fdd8-4d67-8482-ecc439e899e7/3b83fd55-2778-484a-a30f-01302499a9b6",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SUPPLY/",
+            "uuid_path": "/f077bb96-fdd8-4d67-8482-ecc439e899e7/b169b6e1-bf47-4bb4-8864-f460a63c8d56",
+            "violations": [
+                {
+                    "description": "Both GND and GNDA are attached to the same items; GND will be used in the netlist",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR016 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 0.5588,
+                                "y": 0.8509
+                            },
+                            "uuid": "f738e45a-5fdf-4b89-8ad3-3867986c47a0"
+                        },
+                        {
+                            "description": "Symbol #PWR028 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 1.6891,
+                                "y": 1.3208
+                            },
+                            "uuid": "c888c317-292e-4e17-bbee-259035bc9b5f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "multiple_net_names"
+                }
+            ]
+        }
+    ],
+    "source": "EEG_Kicad_Project.kicad_sch"
+}

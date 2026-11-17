@@ -1255,6 +1255,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x10"
 			(pin_names
 				(offset 1.016)
@@ -3725,6 +3832,16 @@
 		)
 		(uuid "bf05d3f4-5b3b-44e1-94ba-9d3b8bbdb60a")
 	)
+	(label "VCAP1"
+		(at 50.8 185.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c24f064b-34aa-4450-8066-e90580d7bfec")
+	)
 	(label "CH6"
 		(at 93.98 115.57 90)
 		(effects
@@ -3975,6 +4092,46 @@
 			)
 		)
 	)
+	(global_label "SPI1_SCK"
+		(shape bidirectional)
+		(at 251.46 113.03 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "41154b6e-4278-4040-b0ee-e8b19ab51bc7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 251.46 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SPI1_MOSI"
+		(shape bidirectional)
+		(at 261.62 113.03 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5243ff4a-ed33-4ff6-b4af-3df01710de33")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 261.62 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "ADS_START"
 		(shape bidirectional)
 		(at 251.46 85.09 90)
@@ -4147,6 +4304,26 @@
 		(uuid "d25e7e4c-2d41-417c-940b-6bb1498e4125")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 207.01 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SPI1_MISO"
+		(shape bidirectional)
+		(at 271.78 113.03 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "db148067-4153-4c1a-a81c-31babaa1fa2a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 271.78 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4500,6 +4677,100 @@
 			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/d98eeb69-7662-4ed7-9abe-731140c82755"
 					(reference "#PWR0117")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 271.78 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "11994d14-a2ba-49f3-904a-7fdb37f6c5a6")
+		(property "Reference" "R40"
+			(at 273.812 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 271.78 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 270.002 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 271.78 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 271.78 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25741"
+			(at 271.78 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0402WGF1003TCE"
+			(at 271.78 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 271.78 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4d8654b9-6525-4f76-9c86-d3f547235f1f")
+		)
+		(pin "2"
+			(uuid "aaf6830a-4895-4f61-ba4e-9372b76a5b51")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/d98eeb69-7662-4ed7-9abe-731140c82755"
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -5691,6 +5962,100 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 261.62 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "30cd4bb6-9e55-4488-8ca0-49395af41cfd")
+		(property "Reference" "R39"
+			(at 259.08 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 264.16 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 259.842 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 261.62 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 261.62 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25741"
+			(at 261.62 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0402WGF1003TCE"
+			(at 261.62 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 261.62 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1489a9f4-dbdf-4ff9-9f42-3ce60066eb1b")
+		)
+		(pin "2"
+			(uuid "d64f8996-8c39-48f7-8d2f-cd4efddd2749")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/d98eeb69-7662-4ed7-9abe-731140c82755"
+					(reference "R39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 227.33 105.41 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6171,6 +6536,71 @@
 			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/d98eeb69-7662-4ed7-9abe-731140c82755"
 					(reference "#PWR0120")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 271.78 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3bec417a-a9bc-421f-910a-bbe32e415210")
+		(property "Reference" "#PWR0132"
+			(at 271.78 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 271.78 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 271.78 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 271.78 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 271.78 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f8db2bf8-9a7b-4e05-b1be-cb1d90d8196f")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/d98eeb69-7662-4ed7-9abe-731140c82755"
+					(reference "#PWR0132")
 					(unit 1)
 				)
 			)
@@ -7097,6 +7527,71 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 261.62 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "505717af-d50c-4572-a691-43799aec63a4")
+		(property "Reference" "#PWR0131"
+			(at 261.62 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 261.62 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 261.62 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 261.62 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 261.62 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ffe80fba-963f-4d6c-b962-2cc485513808")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/d98eeb69-7662-4ed7-9abe-731140c82755"
+					(reference "#PWR0131")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 152.4 148.59 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7806,6 +8301,70 @@
 			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/d98eeb69-7662-4ed7-9abe-731140c82755"
 					(reference "#PWR0124")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 50.8 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "674e2a82-721d-4ab4-916d-aace89bbd260")
+		(property "Reference" "TP7"
+			(at 50.8 179.832 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VCAP1"
+			(at 54.356 184.404 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 55.88 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 50.8 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6243a2a8-027e-4e6d-85c5-42fd6b73738b")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/d98eeb69-7662-4ed7-9abe-731140c82755"
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -8787,6 +9346,100 @@
 			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/d98eeb69-7662-4ed7-9abe-731140c82755"
 					(reference "C66")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 251.46 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "947b173e-bf0e-4466-858e-da7fd74b0bb6")
+		(property "Reference" "R38"
+			(at 248.92 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 254 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 249.682 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 251.46 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 251.46 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25741"
+			(at 251.46 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0402WGF1003TCE"
+			(at 251.46 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 251.46 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "562a9ac6-5025-434c-8b50-7b5a2fda86b7")
+		)
+		(pin "2"
+			(uuid "40cc9c72-153f-4c50-a729-44bacb8dd18e")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/d98eeb69-7662-4ed7-9abe-731140c82755"
+					(reference "R38")
 					(unit 1)
 				)
 			)
@@ -11829,6 +12482,71 @@
 			(project "EEG_Kicad_Project"
 				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/d98eeb69-7662-4ed7-9abe-731140c82755"
 					(reference "R29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 251.46 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e43dfcaf-7f06-48da-90d3-b0f5bf759363")
+		(property "Reference" "#PWR0130"
+			(at 251.46 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 251.46 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 251.46 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 251.46 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 251.46 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1177b5f1-13a1-4544-a2f4-e91551801563")
+		)
+		(instances
+			(project "EEG_Kicad_Project"
+				(path "/f077bb96-fdd8-4d67-8482-ecc439e899e7/d98eeb69-7662-4ed7-9abe-731140c82755"
+					(reference "#PWR0130")
 					(unit 1)
 				)
 			)
