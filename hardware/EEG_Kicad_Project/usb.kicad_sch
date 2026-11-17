@@ -2444,16 +2444,6 @@
 		)
 		(uuid "e4025343-4537-460c-a002-36a058850cba")
 	)
-	(text "Not UD+ UD- TO Isolator instead of D+ D-?\n"
-		(exclude_from_sim no)
-		(at 205.74 26.416 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "f233c7ae-f16a-4def-a3b5-7d603d13d95b")
-	)
 	(junction
 		(at 64.77 64.77)
 		(diameter 0)
@@ -3234,28 +3224,6 @@
 		)
 		(uuid "c0bb1a1f-7a90-4e55-9b85-b12de443112c")
 	)
-	(global_label "D-"
-		(shape input)
-		(at 201.93 46.99 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1c6d1edb-f9c6-4c47-874e-477e9d1e3cc7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 201.93 48.7824 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "UD+"
 		(shape input)
 		(at 146.05 55.88 90)
@@ -3318,6 +3286,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "UD+"
+		(shape input)
+		(at 205.74 46.99 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "80984e28-12eb-49e3-bfdf-6d1cb8d4a5d8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 205.74 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -3410,6 +3398,26 @@
 			)
 		)
 	)
+	(global_label "UD-"
+		(shape input)
+		(at 201.93 46.99 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b8ea26f5-8ce8-4256-a908-7f8767edf6dd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 201.93 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "D-"
 		(shape input)
 		(at 67.31 59.69 0)
@@ -3423,28 +3431,6 @@
 		(uuid "f0a1c009-f695-4659-a82a-292c70a96dc8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 73.1376 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "D+"
-		(shape input)
-		(at 205.74 46.99 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fc4c6806-0c5d-4771-a621-03357c98eba5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 205.74 48.7824 90)
 			(effects
 				(font
 					(size 1.27 1.27)

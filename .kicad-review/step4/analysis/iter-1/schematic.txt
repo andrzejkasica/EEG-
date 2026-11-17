@@ -1,0 +1,287 @@
+=== Design Analysis ===
+
+--- analog ---
+  [1] INFO AD-DET: ADC U3 (ADS1299)
+      Detail: Detected external ADC U3.
+      Component: U3
+      Stages: schematic
+
+--- connectors ---
+  [2] WARNING CG-AUD: Connector J4 has no ground pins (10 pins)
+      Detail: J4: 10-pin connector has no ground pins
+      Fix:    Add ground pin(s) for EMI control.
+      Component: J4
+      Stages: schematic
+
+--- crystal ---
+  [3] INFO DO-DET: Crystal load cap Y1 = 10.5pF
+      Detail: Crystal load capacitance observation
+      Component: Y1
+      Stages: schematic
+
+--- debug ---
+  [4] INFO DI-DET: Debug interface J3 (swd): pass
+      Detail: Detected swd debug interface on connector J3.
+      Stages: schematic, bring_up
+
+--- decoupling ---
+  [5] INFO DC-DET: Decoupling on +3V3
+      Detail: Decoupling capacitors on power rail +3V3
+      Stages: schematic, layout
+  [6] INFO DC-DET: Decoupling on +5V
+      Detail: Decoupling capacitors on power rail +5V
+      Stages: schematic, layout
+  [7] INFO DC-DET: Decoupling on -5V
+      Detail: Decoupling capacitors on power rail -5V
+      Stages: schematic, layout
+  [8] INFO DC-DET: Decoupling on +2V5
+      Detail: Decoupling capacitors on power rail +2V5
+      Stages: schematic, layout
+  [9] INFO DC-DET: Decoupling on -2V5
+      Detail: Decoupling capacitors on power rail -2V5
+      Stages: schematic, layout
+  [10] INFO DC-DET: Decoupling on +5V_PRI
+      Detail: Decoupling capacitors on power rail +5V_PRI
+      Stages: schematic, layout
+  [11] INFO DC-DET: Decoupling on VDD1_ISO1
+      Detail: Decoupling capacitors on power rail VDD1_ISO1
+      Stages: schematic, layout
+
+--- decoupling_coverage ---
+  [12] INFO DO-DET: Decoupling coverage on +3V3
+      Detail: Decoupling frequency coverage for rail +3V3
+      Stages: schematic
+  [13] INFO DO-DET: Decoupling coverage on +5V
+      Detail: Decoupling frequency coverage for rail +5V
+      Stages: schematic
+  [14] INFO DO-DET: Decoupling coverage on -5V
+      Detail: Decoupling frequency coverage for rail -5V
+      Stages: schematic
+  [15] INFO DO-DET: Decoupling coverage on +2V5
+      Detail: Decoupling frequency coverage for rail +2V5
+      Stages: schematic
+  [16] INFO DO-DET: Decoupling coverage on -2V5
+      Detail: Decoupling frequency coverage for rail -2V5
+      Stages: schematic
+  [17] INFO DO-DET: Decoupling coverage on +5V_PRI
+      Detail: Decoupling frequency coverage for rail +5V_PRI
+      Stages: schematic
+  [18] INFO DO-DET: Decoupling coverage on VDD1_ISO1
+      Detail: Decoupling frequency coverage for rail VDD1_ISO1
+      Stages: schematic
+
+--- i2c_bus ---
+  [19] INFO DO-DET: I2C SCL bus on I2C1_SCL
+      Detail: I2C SCL bus detected with 1 device(s)
+      Stages: schematic
+  [20] INFO DO-DET: I2C SDA bus on I2C1_SDA
+      Detail: I2C SDA bus detected with 1 device(s)
+      Stages: schematic
+
+--- isolation ---
+  [21] INFO IB-DET: Isolation barrier: 2 ground domains, 2 isolation component(s)
+      Detail: Detected galvanic isolation with 2 ground domains.
+      Stages: schematic
+
+--- led_control ---
+  [22] INFO LA-AUD: LED D1 (LED) [resistor_limited]
+      Detail: LED audit: D1 using resistor_limited drive method.
+      Component: D1
+      Stages: schematic
+  [23] INFO LA-AUD: LED D2 (LED) [resistor_limited]
+      Detail: LED audit: D2 using resistor_limited drive method.
+      Component: D2
+      Stages: schematic
+
+--- lifecycle ---
+  [24] INFO LC-007: Lifecycle audit not run — --lifecycle flag not passed
+      Detail: Component lifecycle / obsolescence audit was not run this session. Reason: --lifecycle flag not passed (run with --lifecycle to query DigiKey / Mouser / LCSC / element14 for obsolescence + operating-temp coverage; requires network + API keys). The review cannot report active / NRND / EOL / obsolete status, last-time-buy windows, or operating-temperature coverage for any BOM part. Treat the lifecycle section of the report as 'not performed'.
+      Fix:    Run with --lifecycle (requires DIGIKEY_CLIENT_ID / MOUSER_SEARCH_API_KEY / ELEMENT14_API_KEY env vars; LCSC needs no auth) to populate this section. If intentionally skipped, note it explicitly in the report's 'Not Performed' section.
+      Stages: schematic
+
+--- passive_filters ---
+  [25] INFO LC-DET: LC filter at 25291.38Hz
+      Detail: LC filter with parallel capacitors
+      Stages: schematic
+  [26] INFO LC-DET: LC filter at 26415.99Hz
+      Detail: LC filter with parallel capacitors
+      Stages: schematic
+  [27] INFO LC-DET: LC filter at 24981.05Hz
+      Detail: LC filter with parallel capacitors
+      Stages: schematic
+  [28] INFO LC-DET: LC filter at 25083.22Hz
+      Detail: LC filter with parallel capacitors
+      Stages: schematic
+  [29] INFO RC-DET: RC filter R25/C55 at 6786.12Hz
+      Detail: RC-network RC filter
+      Stages: schematic
+  [30] INFO RC-DET: RC filter R26/C56 at 6786.12Hz
+      Detail: RC-network RC filter
+      Stages: schematic
+  [31] INFO RC-DET: RC filter R27/C57 at 6786.12Hz
+      Detail: RC-network RC filter
+      Stages: schematic
+  [32] INFO RC-DET: RC filter R28/C58 at 6786.12Hz
+      Detail: RC-network RC filter
+      Stages: schematic
+  [33] INFO RC-DET: RC filter R29/C59 at 6786.12Hz
+      Detail: RC-network RC filter
+      Stages: schematic
+  [34] INFO RC-DET: RC filter R30/C60 at 6786.12Hz
+      Detail: RC-network RC filter
+      Stages: schematic
+  [35] INFO RC-DET: RC filter R31/C61 at 6786.12Hz
+      Detail: RC-network RC filter
+      Stages: schematic
+  [36] INFO RC-DET: RC filter R32/C62 at 6786.12Hz
+      Detail: RC-network RC filter
+      Stages: schematic
+  [37] INFO RC-DET: RC filter R35/C63 at 159.15Hz
+      Detail: RC-network RC filter
+      Stages: schematic
+  [38] INFO RC-DET: RC filter R25/C64 at 67861.23Hz
+      Detail: low-pass RC filter
+      Stages: schematic
+  [39] INFO RC-DET: RC filter R26/C65 at 67861.23Hz
+      Detail: low-pass RC filter
+      Stages: schematic
+  [40] INFO RC-DET: RC filter R27/C66 at 67861.23Hz
+      Detail: low-pass RC filter
+      Stages: schematic
+  [41] INFO RC-DET: RC filter R28/C67 at 67861.23Hz
+      Detail: low-pass RC filter
+      Stages: schematic
+  [42] INFO RC-DET: RC filter R29/C68 at 67861.23Hz
+      Detail: low-pass RC filter
+      Stages: schematic
+  [43] INFO RC-DET: RC filter R30/C69 at 67861.23Hz
+      Detail: low-pass RC filter
+      Stages: schematic
+  [44] INFO RC-DET: RC filter R1/C7 at 159.15Hz
+      Detail: low-pass RC filter
+      Stages: schematic
+  [45] INFO RC-DET: RC filter R31/C70 at 67861.23Hz
+      Detail: low-pass RC filter
+      Stages: schematic
+  [46] INFO RC-DET: RC filter R32/C71 at 67861.23Hz
+      Detail: low-pass RC filter
+      Stages: schematic
+
+--- power_integrity ---
+  [47] INFO PS-001: Regulator U5: PG status unknown for TLV75733PDBV (no datasheet extraction)
+      Detail: Regulator U5 (TLV75733PDBV) supplies +3V3 to U1, U1, U1 but PG status is unknown. Run sync_datasheets to verify.
+      Fix:    Run sync_datasheets to verify whether TLV75733PDBV has a PG pin.
+      Stages: schematic
+
+--- power_management ---
+  [48] INFO PR-DET: Regulator U1 ic_with_internal_regulator
+      Detail: Power regulator (ic_with_internal_regulator) detected
+      Component: U1
+      Stages: schematic
+  [49] INFO PR-DET: Regulator U2 charge_pump
+      Detail: Power regulator (charge_pump) detected
+      Component: U2
+      Stages: schematic
+  [50] INFO PR-DET: Regulator U4 LDO
+      Detail: Power regulator (LDO) detected
+      Component: U4
+      Stages: schematic
+  [51] INFO PR-DET: Regulator U5 LDO
+      Detail: Power regulator (LDO) detected
+      Component: U5
+      Stages: schematic
+  [52] INFO PR-DET: Regulator U6 LDO
+      Detail: Power regulator (LDO) detected
+      Component: U6
+      Stages: schematic
+  [53] INFO RS-DET: RC reset network on NRST (1.0 ms)
+      Detail: Detected RC reset network on net NRST.
+      Stages: schematic, bring_up
+
+--- protection ---
+  [54] INFO EP-AUD: ESD audit J1 (generic): partial coverage
+      Detail: ESD protection audit for generic connector J1: partial coverage.
+      Stages: schematic
+  [55] INFO EP-AUD: ESD audit J2 (uart): none coverage
+      Detail: ESD protection audit for uart connector J2: none coverage.
+      Stages: schematic
+  [56] INFO EP-AUD: ESD audit J3 (header): none coverage
+      Detail: ESD protection audit for header connector J3: none coverage.
+      Stages: schematic
+  [57] INFO EP-AUD: ESD audit J4 (header): full coverage
+      Detail: ESD protection audit for header connector J4: full coverage.
+      Stages: schematic
+  [58] INFO EP-AUD: ESD audit J5 (header): none coverage
+      Detail: ESD protection audit for header connector J5: none coverage.
+      Stages: schematic
+  [59] INFO PD-DET: Protection U10 esd_ic
+      Detail: IC-based ESD protection device detected
+      Component: U10
+      Stages: schematic
+  [60] INFO PD-DET: Protection U11 esd_ic
+      Detail: IC-based ESD protection device detected
+      Component: U11
+      Stages: schematic
+  [61] INFO PD-DET: Protection U12 esd_ic
+      Detail: IC-based ESD protection device detected
+      Component: U12
+      Stages: schematic
+  [62] INFO PD-DET: Protection U8 esd_ic
+      Detail: IC-based ESD protection device detected
+      Component: U8
+      Stages: schematic
+
+--- regulator_caps ---
+  [63] INFO DO-DET: Regulator U2 missing capacitors
+      Detail: Regulator missing input or output capacitors
+      Component: U2
+      Stages: schematic
+  [64] INFO DO-DET: Regulator U4 missing capacitors
+      Detail: Regulator missing input or output capacitors
+      Component: U4
+      Stages: schematic
+  [65] INFO DO-DET: Regulator U6 missing capacitors
+      Detail: Regulator missing input or output capacitors
+      Component: U6
+      Stages: schematic
+
+--- reset_pin ---
+  [66] INFO DO-DET: Reset pin on U1 (NRST)
+      Detail: Reset pin configuration for U1
+      Component: U1
+      Stages: schematic
+  [67] INFO DO-DET: Reset pin on U3 (~{RESET})
+      Detail: Reset pin configuration for U3
+      Component: U3
+      Stages: schematic
+
+--- sourcing ---
+  [68] ERROR SS-001: Sourcing blocker: BOM has <50% MPN coverage (9/41 unique parts). Board is not pre-fab ready.
+      Detail: Sourcing audit: 9 of 41 unique BOM lines (grouped by value + footprint) carry a manufacturer part number (22.0%). Pre-fab readiness requires 100% coverage; production assembly requires all parts sourceable via one of the supported distributors.
+      Fix:    Populate the MPN field on the listed refs (use the digikey / mouser / lcsc / element14 skill to search by value/footprint when the MPN isn't already known).
+      Stages: pre_fab
+
+--- timing ---
+  [69] INFO XL-DET: Crystal Y1 at 8000000.0Hz
+      Detail: Crystal oscillator circuit detected
+      Stages: schematic
+
+--- topology ---
+  [70] WARNING SJ-DET: JP1 (Jumper_2_Open) — open by default, between BOOT0 ↔ +3V3
+      Fix:    Open solder jumper is non-conducting until the pads are soldered. If either side is a power rail or required signal, the board won't function without the solder step.
+      Stages: schematic
+
+--- usb_data ---
+  [71] INFO DO-DET: USB data line D+
+      Detail: USB data net D+ detected
+      Stages: schematic
+  [72] INFO DO-DET: USB data line D-
+      Detail: USB data net D- detected
+      Stages: schematic
+
+--- verification ---
+  [73] INFO DS-003: Datasheets present (5 files) but 32 of 41 unique BOM lines lack an MPN — those lines can't be cross-referenced.
+      Fix:    Set the MPN field on the listed parts and re-sync datasheets so every BOM entry has manufacturer evidence.
+      Stages: schematic
+
+Total: 73 (1 error, 2 warnings, 70 info)

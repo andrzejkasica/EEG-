@@ -2986,7 +2986,7 @@
 		(uuid "110f19a5-0235-4450-8e19-cd34159a1e41")
 	)
 	(label "CH6"
-		(at 106.68 64.77 90)
+		(at 107.95 66.04 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3306,7 +3306,7 @@
 		(uuid "5162e0e6-62f6-41b3-a31c-76aca0174f35")
 	)
 	(label "CH7"
-		(at 116.84 64.77 90)
+		(at 118.11 66.04 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3606,7 +3606,7 @@
 		(uuid "94dcedfe-50a4-47ff-a31e-4e82bcf224d3")
 	)
 	(label "SRB1_F"
-		(at 137.16 64.77 90)
+		(at 138.43 66.04 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3836,7 +3836,7 @@
 		(uuid "daff8a44-8016-4252-a59a-00aa22240756")
 	)
 	(label "CH8"
-		(at 127 64.77 90)
+		(at 128.27 66.04 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4459,7 +4459,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 116.84 40.64 0)
+			(at 116.84 48.768 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5478,7 +5478,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 106.68 40.64 0)
+			(at 106.68 48.768 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5603,7 +5603,7 @@
 		(dnp no)
 		(uuid "2e2a96b2-79a6-4b1b-afef-2308353421f1")
 		(property "Reference" "C60"
-			(at 95.504 115.57 90)
+			(at 89.662 108.712 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5612,7 +5612,7 @@
 			)
 		)
 		(property "Value" "4.7n C0G"
-			(at 97.536 115.57 90)
+			(at 89.662 110.744 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6130,7 +6130,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 147.32 40.64 0)
+			(at 147.32 48.768 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6443,7 +6443,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 116.84 72.39 0)
+		(at 118.11 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6451,7 +6451,7 @@
 		(dnp no)
 		(uuid "3e0ed100-9430-47fc-b25f-58287f218adb")
 		(property "Reference" "#PWR0122"
-			(at 116.84 66.04 0)
+			(at 118.11 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6460,7 +6460,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 116.84 68.58 0)
+			(at 118.11 77.978 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6468,7 +6468,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 116.84 72.39 0)
+			(at 118.11 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6477,7 +6477,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 72.39 0)
+			(at 118.11 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6486,7 +6486,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 116.84 72.39 0)
+			(at 118.11 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6716,7 +6716,7 @@
 		(dnp yes)
 		(uuid "43e2ae45-5c86-4696-ae45-d3a7728ec729")
 		(property "Reference" "C68"
-			(at 144.78 40.64 0)
+			(at 144.526 27.432 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6725,7 +6725,7 @@
 			)
 		)
 		(property "Value" "470p C0G"
-			(at 149.86 40.64 0)
+			(at 144.526 29.464 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7564,7 +7564,7 @@
 		(dnp no)
 		(uuid "5bb5ee64-df39-4296-b29c-09955b69107d")
 		(property "Reference" "C55"
-			(at 32.258 115.57 90)
+			(at 25.908 108.712 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7573,7 +7573,7 @@
 			)
 		)
 		(property "Value" "4.7n C0G"
-			(at 34.29 115.57 90)
+			(at 25.908 110.744 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7660,7 +7660,7 @@
 		(dnp no)
 		(uuid "5e2dca82-73fc-4c14-afa5-85d63f9b3773")
 		(property "Reference" "C56"
-			(at 44.704 115.57 90)
+			(at 38.608 108.712 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7669,7 +7669,7 @@
 			)
 		)
 		(property "Value" "4.7n C0G"
-			(at 46.736 115.57 90)
+			(at 38.608 110.744 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7748,7 +7748,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 137.16 72.39 0)
+		(at 138.43 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7756,7 +7756,7 @@
 		(dnp no)
 		(uuid "65c16ef0-3978-4746-b2e2-bb29a84f84f3")
 		(property "Reference" "#PWR0124"
-			(at 137.16 66.04 0)
+			(at 138.43 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7765,7 +7765,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 137.16 68.58 0)
+			(at 138.43 77.978 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7773,7 +7773,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 72.39 0)
+			(at 138.43 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7782,7 +7782,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 72.39 0)
+			(at 138.43 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7791,7 +7791,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 137.16 72.39 0)
+			(at 138.43 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7947,7 +7947,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 106.68 68.58 0)
+		(at 107.95 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7955,7 +7955,7 @@
 		(dnp yes)
 		(uuid "791d28de-3e4c-4712-8b5b-35cc3ea3e130")
 		(property "Reference" "C69"
-			(at 104.14 68.58 0)
+			(at 102.616 57.404 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7964,7 +7964,7 @@
 			)
 		)
 		(property "Value" "470p C0G"
-			(at 109.22 68.58 0)
+			(at 102.362 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7973,7 +7973,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 107.645 64.77 0)
+			(at 108.915 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7982,7 +7982,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 68.58 0)
+			(at 107.95 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7991,7 +7991,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 106.68 68.58 0)
+			(at 107.95 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8000,7 +8000,7 @@
 			)
 		)
 		(property "LCSC" "C76971"
-			(at 106.68 68.58 0)
+			(at 107.95 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8009,7 +8009,7 @@
 			)
 		)
 		(property "MPN" "GRM1555C1H471JA01D"
-			(at 106.68 68.58 0)
+			(at 107.95 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8018,7 +8018,7 @@
 			)
 		)
 		(property "Tolerance" "5%"
-			(at 106.68 68.58 0)
+			(at 107.95 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8382,7 +8382,7 @@
 		(dnp yes)
 		(uuid "8618be1f-923b-4618-81cb-095421e7bc9b")
 		(property "Reference" "C67"
-			(at 134.62 40.64 0)
+			(at 134.112 27.178 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8391,7 +8391,7 @@
 			)
 		)
 		(property "Value" "470p C0G"
-			(at 139.7 40.64 0)
+			(at 134.112 29.464 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8706,7 +8706,7 @@
 		(dnp yes)
 		(uuid "9340d7df-e2dd-4f84-b0b2-4cd214112c2d")
 		(property "Reference" "C66"
-			(at 124.46 40.64 0)
+			(at 123.698 27.178 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8715,7 +8715,7 @@
 			)
 		)
 		(property "Value" "470p C0G"
-			(at 129.54 40.64 0)
+			(at 123.698 29.464 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8899,7 +8899,7 @@
 		(dnp no)
 		(uuid "953e1d30-9331-4a1b-80c2-1f035f1913a5")
 		(property "Reference" "C61"
-			(at 108.204 115.57 90)
+			(at 102.108 108.712 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8908,7 +8908,7 @@
 			)
 		)
 		(property "Value" "4.7n C0G"
-			(at 110.236 115.57 90)
+			(at 102.108 110.744 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9064,7 +9064,7 @@
 		(dnp yes)
 		(uuid "9984b5d2-06ad-4af0-8c9a-cfee0d811311")
 		(property "Reference" "C65"
-			(at 114.3 40.64 0)
+			(at 112.776 26.924 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9073,7 +9073,7 @@
 			)
 		)
 		(property "Value" "470p C0G"
-			(at 119.38 40.64 0)
+			(at 112.776 29.464 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9152,7 +9152,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 116.84 68.58 0)
+		(at 118.11 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9160,7 +9160,7 @@
 		(dnp yes)
 		(uuid "999f522a-7d90-447d-b244-0d00b68cc7bc")
 		(property "Reference" "C70"
-			(at 114.3 68.58 0)
+			(at 114.046 57.404 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9169,7 +9169,7 @@
 			)
 		)
 		(property "Value" "470p C0G"
-			(at 119.38 68.58 0)
+			(at 113.792 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9178,7 +9178,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 117.805 64.77 0)
+			(at 119.075 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9187,7 +9187,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 68.58 0)
+			(at 118.11 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9196,7 +9196,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 116.84 68.58 0)
+			(at 118.11 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9205,7 +9205,7 @@
 			)
 		)
 		(property "LCSC" "C76971"
-			(at 116.84 68.58 0)
+			(at 118.11 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9214,7 +9214,7 @@
 			)
 		)
 		(property "MPN" "GRM1555C1H471JA01D"
-			(at 116.84 68.58 0)
+			(at 118.11 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9223,7 +9223,7 @@
 			)
 		)
 		(property "Tolerance" "5%"
-			(at 116.84 68.58 0)
+			(at 118.11 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9265,7 +9265,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 127 40.64 0)
+			(at 127 48.768 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9321,7 +9321,7 @@
 		(dnp no)
 		(uuid "9c398f17-793a-420e-a4dc-fe2be136a909")
 		(property "Reference" "C62"
-			(at 120.904 115.57 90)
+			(at 114.808 108.712 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9330,7 +9330,7 @@
 			)
 		)
 		(property "Value" "4.7n C0G"
-			(at 122.936 115.57 90)
+			(at 114.808 110.744 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9540,7 +9540,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 127 68.58 0)
+		(at 128.27 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9548,7 +9548,7 @@
 		(dnp yes)
 		(uuid "a034ae88-9ae5-4b5e-a2af-97f36b5a10b8")
 		(property "Reference" "C71"
-			(at 124.46 68.58 0)
+			(at 124.46 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9557,7 +9557,7 @@
 			)
 		)
 		(property "Value" "470p C0G"
-			(at 129.54 68.58 0)
+			(at 124.46 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9566,7 +9566,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 127.965 64.77 0)
+			(at 129.235 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9575,7 +9575,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 68.58 0)
+			(at 128.27 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9584,7 +9584,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 127 68.58 0)
+			(at 128.27 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9593,7 +9593,7 @@
 			)
 		)
 		(property "LCSC" "C76971"
-			(at 127 68.58 0)
+			(at 128.27 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9602,7 +9602,7 @@
 			)
 		)
 		(property "MPN" "GRM1555C1H471JA01D"
-			(at 127 68.58 0)
+			(at 128.27 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9611,7 +9611,7 @@
 			)
 		)
 		(property "Tolerance" "5%"
-			(at 127 68.58 0)
+			(at 128.27 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10202,7 +10202,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 127 72.39 0)
+		(at 128.27 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10210,7 +10210,7 @@
 		(dnp no)
 		(uuid "b8adbe7d-dbc3-4b73-ba4a-3de6da5c0058")
 		(property "Reference" "#PWR0123"
-			(at 127 66.04 0)
+			(at 128.27 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10219,7 +10219,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 127 68.58 0)
+			(at 128.27 77.978 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10227,7 +10227,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127 72.39 0)
+			(at 128.27 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10236,7 +10236,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 72.39 0)
+			(at 128.27 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10245,7 +10245,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 127 72.39 0)
+			(at 128.27 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10507,7 +10507,7 @@
 		(dnp no)
 		(uuid "c713c3e9-2170-49f2-a1b9-50cb4d1df658")
 		(property "Reference" "C57"
-			(at 57.404 115.57 90)
+			(at 51.054 108.712 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10516,7 +10516,7 @@
 			)
 		)
 		(property "Value" "4.7n C0G"
-			(at 59.436 115.57 90)
+			(at 51.054 110.744 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10940,7 +10940,7 @@
 		(dnp no)
 		(uuid "d0058dfd-71ac-402d-9a21-24fdcbb834d2")
 		(property "Reference" "C59"
-			(at 82.804 115.57 90)
+			(at 76.708 108.712 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10949,7 +10949,7 @@
 			)
 		)
 		(property "Value" "4.7n C0G"
-			(at 84.836 115.57 90)
+			(at 76.708 110.744 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11252,7 +11252,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 137.16 68.58 0)
+		(at 138.43 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11260,7 +11260,7 @@
 		(dnp yes)
 		(uuid "d3f61fd4-e36f-4077-bb41-7a49e391e419")
 		(property "Reference" "C72"
-			(at 134.62 68.58 0)
+			(at 135.128 54.864 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11269,7 +11269,7 @@
 			)
 		)
 		(property "Value" "470p C0G"
-			(at 139.7 68.58 0)
+			(at 134.874 57.404 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11278,7 +11278,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 138.125 64.77 0)
+			(at 139.395 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11287,7 +11287,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 68.58 0)
+			(at 138.43 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11296,7 +11296,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 137.16 68.58 0)
+			(at 138.43 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11305,7 +11305,7 @@
 			)
 		)
 		(property "LCSC" "C76971"
-			(at 137.16 68.58 0)
+			(at 138.43 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11314,7 +11314,7 @@
 			)
 		)
 		(property "MPN" "GRM1555C1H471JA01D"
-			(at 137.16 68.58 0)
+			(at 138.43 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11323,7 +11323,7 @@
 			)
 		)
 		(property "Tolerance" "5%"
-			(at 137.16 68.58 0)
+			(at 138.43 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11365,7 +11365,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 114.3 160.02 0)
+			(at 114.3 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11677,7 +11677,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 106.68 72.39 0)
+		(at 107.95 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11685,7 +11685,7 @@
 		(dnp no)
 		(uuid "dd5f6f50-af28-4928-a729-1ade13ca05fe")
 		(property "Reference" "#PWR0121"
-			(at 106.68 66.04 0)
+			(at 107.95 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11694,7 +11694,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 106.68 68.58 0)
+			(at 107.95 77.978 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11702,7 +11702,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 106.68 72.39 0)
+			(at 107.95 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11711,7 +11711,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 72.39 0)
+			(at 107.95 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11720,7 +11720,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 106.68 72.39 0)
+			(at 107.95 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11947,7 +11947,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 137.16 40.64 0)
+			(at 137.16 48.768 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12272,7 +12272,7 @@
 		(dnp yes)
 		(uuid "f6b428a6-11cd-4779-a194-944e5b7c4270")
 		(property "Reference" "C64"
-			(at 104.14 40.64 0)
+			(at 101.6 26.924 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12281,7 +12281,7 @@
 			)
 		)
 		(property "Value" "470p C0G"
-			(at 109.22 40.64 0)
+			(at 101.6 29.464 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12368,7 +12368,7 @@
 		(dnp no)
 		(uuid "f79a4284-6b85-4e45-9cce-f0b65297f167")
 		(property "Reference" "C58"
-			(at 70.104 115.57 90)
+			(at 64.008 108.712 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12377,7 +12377,7 @@
 			)
 		)
 		(property "Value" "4.7n C0G"
-			(at 72.136 115.57 90)
+			(at 64.008 110.744 0)
 			(effects
 				(font
 					(size 1.27 1.27)
